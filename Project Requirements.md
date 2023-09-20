@@ -143,9 +143,12 @@ a specific category of expenses.
 <strong>Postconditions:</strong> A user reaches or exceeds their limit set aside for a specific category of expenses.  
 <strong>List of steps:</strong> 
 1. User enters a value of money spent that reaches or exceeds their limit in their budget.
-1.  
-<strong>Extensions:</strong> Text.  
-<strong>Exceptions:</strong> Text.  
+1. Code triggers application to send a notification to the user.  
+<strong>Extensions:</strong>
+1. Every time a user updates how much money they have spent on something, the program will check the total value
+   against their set limit.  
+<strong>Exceptions:</strong>
+1. User may enter an erroneous amount leading to a false notification.  
 
 
 ## Non-functional Requirements
