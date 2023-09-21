@@ -36,6 +36,11 @@ N/A
 1. Download Kotlin, Androind Studio
 2. Learn Kotlin and Android Studio
 
+### Robin's Goals
+1. Download and learn kotlin
+2. Learn about what Database to use on Android Studio
+3. Learn a SQL language
+
 ## Individual Progress & Issues
 ### Progress - Ryan
 1. Learned some Kotlin
@@ -55,6 +60,13 @@ N/A
 1. Getting android studio to run properly
 2. Unkown error pop's up on android studio
 
+### Progress - Robin
+1. Learned some kotlin
+2. Found two potential database language that we can use. (firebase , SQLite
+
+### Issues - Robin
+1. My andriod studio is running slow and is causing my mac to heat up
+ 
 ## Individual Goals for Next Week
 ### Ryan
 1. Finish up learning Kotlin
@@ -67,3 +79,7 @@ N/A
 2. Finalize my role to know exactly what to work on
 3. Start writing some code
 
+### Robin
+1. Pick the either firebase or SQLite and start learning it
+2. Learn more about Android Studio and kotlin
+3. Write some code for the database
