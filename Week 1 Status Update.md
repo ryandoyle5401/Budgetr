@@ -53,6 +53,7 @@ N/A
 
 ### Issues - Josh
 1. Getting android studio to run properly
+2. Unkown error pop's up on android studio
 
 ## Individual Goals for Next Week
 ### Ryan
