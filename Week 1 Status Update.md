@@ -32,6 +32,10 @@ N/A
 1. Learn Kotlin
 2. Learn about Android Studio
 
+### Josh's Goals
+1. Download Kotlin, Androind Studio
+2. Learn Kotlin and Android Studio
+
 ## Individual Progress & Issues
 ### Progress - Ryan
 1. Learned some Kotlin
@@ -43,6 +47,13 @@ N/A
 2. App sometimes crashed
 3. Android Studio runs slow
 
+### Progress - Josh
+1. Took time to learn some Kotlin
+2. Explored what android studio can do
+
+### Issues - Josh
+1. Getting android studio to run properly
+
 ## Individual Goals for Next Week
 ### Ryan
 1. Finish up learning Kotlin
@@ -50,4 +61,8 @@ N/A
 3. Learn more about frontend
 4. Start developing frontend
 
+### Josh
+1. Get a solid understanding of kotlin
+2. Finalize my role to know exactly what to work on
+3. Start writing some code
 
