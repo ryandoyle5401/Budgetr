@@ -33,11 +33,17 @@ N/A
 2. Learn about Android Studio
 
 ### Josh's Goals
-1. Download Kotlin, Androind Studio
+1. Download Kotlin, Android Studio
 2. Learn Kotlin and Android Studio
 
+### Mitkumar's Goals
+1. Download Kotlin, Android Studio
+2. Learn Kotlin
+3. Learn Android Studio
+4. Learn the fundamentals of making an App
+
 ### Robin's Goals
-1. Download and learn kotlin
+1. Download and learn Kotlin
 2. Learn about what Database to use on Android Studio
 3. Learn a SQL language
 
@@ -63,6 +69,15 @@ N/A
 
 ### Issues - Josh
 1. Getting android studio to run properly
+2. Unkown error pop's up on android studio
+
+### Progress - Mitkumar
+1. Downloaded Andriod Studio
+2. Explored what android studio can do
+3. Learned a bit about kotlin
+
+### Issues - Mitkumar
+1. Setting up andriod studio with github
 2. Unkown error pop's up on android studio
 
 ### Progress - Robin
@@ -91,6 +106,11 @@ N/A
 ### Josh
 1. Get a solid understanding of kotlin
 2. Finalize my role to know exactly what to work on
+3. Start writing some code
+
+### Mit
+1. start learning kotlin
+2. figure out the 
 3. Start writing some code
 
 ### Robin
