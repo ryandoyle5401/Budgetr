@@ -41,6 +41,11 @@ N/A
 2. Learn about what Database to use on Android Studio
 3. Learn a SQL language
 
+### David's Goals
+1. Learn some Kotlin
+2. Install Android Studio
+3. Install CoPilot to Android Studio
+
 ## Individual Progress & Issues
 ### Progress - Ryan
 1. Learned some Kotlin
@@ -66,7 +71,16 @@ N/A
 
 ### Issues - Robin
 1. My andriod studio is running slow and is causing my mac to heat up
- 
+
+### Progress - David
+1. Tested out Kotlin on Android Studio
+2. Set up AVD
+3. Installed CoPilot to Android Studio
+
+### Issues - David
+1. Android Studio is kinda slow on my machine
+2. Android Studio IDE has many unnecessary features cluttering my screen
+
 ## Individual Goals for Next Week
 ### Ryan
 1. Finish up learning Kotlin
@@ -83,3 +97,8 @@ N/A
 1. Pick the either firebase or SQLite and start learning it
 2. Learn more about Android Studio and kotlin
 3. Write some code for the database
+
+### David
+1. Learn Git and how to properly do Version Control
+2. Learn how to effectively use CoPilot
+3. Begin or map out backend work
