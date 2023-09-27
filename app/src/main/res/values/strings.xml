@@ -1,3 +1,6 @@
 <resources>
     <string name="app_name">Budgetr</string>
+    <string name="title_activity_login">Login</string>
+    <string name="title_activity_recommendations">Recommendations</string>
+    <string name="title_activity_homescreen">Homescreen</string>
 </resources>
