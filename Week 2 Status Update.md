@@ -65,10 +65,11 @@ For this week we will discuss about issues regarding the new project on GitHub n
 2. Android Studio is difficult to run on my computer
 
 ### Progress - Josh
-1. 
+1. Learned how to pull from github
+2. Learned some jetcompose
 
 ### Issues - Josh
-1. 
+1. Getting a smooth run with android studio
 
 ### Progress - Robin
 1. 
@@ -96,9 +97,12 @@ For this week we will discuss about issues regarding the new project on GitHub n
 1. Fix Android Studio project and GitHub repo
 2. Work on creating the GUIs for the different screens
 3. Collaborate with Josh on GUI design
+4. get copilot installed
 
 ### Josh
-1. 
+1. Figure out how to get android studio to run well
+2. Learn more jetcompose
+3. Start collaborating with Ryan about GUI
 
 ### Robin
 1. 
