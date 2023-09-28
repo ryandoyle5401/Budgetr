@@ -1,7 +1,7 @@
 # Team Report
 
 ## Agenda
-
+For this week we will discuss about issues regarding the new project on GitHub not working on other members' computers.
 
 ## Group Goals from Previous Week
 1. Get everyone on the same page with what we are doing
@@ -11,12 +11,22 @@
 
 ## Group Progress & Issues
 ### Progress
+1. Everyone knows what they can work on
+2. Everyone is content with their roles
+3. Learned more Kotlin
+4. Learned more about Firebase database
+5. Learned more about backend development
 
 ### Issues
 1. Android Studio project isn't set up correctly
+2. Members can't run the default code
+3. Members can't create new 'Compose - Empty Activity' classes
 
 ## Group Goals for Next Week
-
+1. Make sure the code from GitHub works on everyone's Android Studio
+2. Get all users to have the ability to create a new 'Compose - Empty Activity' class
+3. Create tables for database
+4. Create basic layouts for the different screens
 
 # Member Contributions
 
@@ -72,6 +82,12 @@
 ### Issues - David
 1. 
 
+### Progress - Mitkumar
+1.
+
+### Issues - Mitkumar
+1.
+
 ## Individual Goals for Next Week
 ### Ryan
 1. Fix Android Studio project and GitHub repo
@@ -86,3 +102,6 @@
 
 ### David
 1. 
+
+### Mitkumar
+1.
