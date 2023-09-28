@@ -77,10 +77,13 @@ For this week we will discuss about issues regarding the new project on GitHub n
 1. 
 
 ### Progress - David
-1. 
+1. Installed/Tested Copilot (really cool)
+2. Pulled the correct git repo onto my machine
+3. Learned about firebase
 
 ### Issues - David
-1. 
+1. Doing pulls in AS IDE did not work at first
+2. Learning how to use proper git commands
 
 ### Progress - Mitkumar
 1.
@@ -101,7 +104,9 @@ For this week we will discuss about issues regarding the new project on GitHub n
 1. 
 
 ### David
-1. 
+1. Learn more about the git commands (how to use in AS)
+2. Begin implementing Firebase
+3. Get on same page as Robin with Firebase 
 
 ### Mitkumar
 1.
