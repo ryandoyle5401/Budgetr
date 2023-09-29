@@ -37,6 +37,11 @@ fun Greeting2(name: String, modifier: Modifier = Modifier) {
     )
 }
 
+@Composable
+fun Password(modifier: Modifier = Modifier) {
+    Text(text = "")
+}
+
 @Preview(showBackground = true)
 @Composable
 fun GreetingPreview2() {
