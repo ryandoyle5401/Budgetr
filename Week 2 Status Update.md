@@ -87,11 +87,13 @@ For this week we will discuss about issues regarding the new project on GitHub n
 2. Learning how to use proper git commands
 
 ### Progress - Mitkumar
-1.
-
+1. Learned how to pull from GitHub
+2. Learned some Kotlin
+   
 ### Issues - Mitkumar
-1.
-
+1. I was having issues with syncing with GitHub
+2. Trying to open files on Android Studio from GitHub
+   
 ## Individual Goals for Next Week
 ### Ryan
 1. Fix Android Studio project and GitHub repo
@@ -100,7 +102,7 @@ For this week we will discuss about issues regarding the new project on GitHub n
 4. get copilot installed
 
 ### Josh
-1. Figure out how to get android studio to run well
+1. Figure out how to get Android Studio to run well
 2. Learn more jetcompose
 3. Start collaborating with Ryan about GUI
 
@@ -113,4 +115,6 @@ For this week we will discuss about issues regarding the new project on GitHub n
 3. Get on same page as Robin with Firebase 
 
 ### Mitkumar
-1.
+1. Figure out how to get android studio to run well
+2. Install copilot
+3. start app development progress
