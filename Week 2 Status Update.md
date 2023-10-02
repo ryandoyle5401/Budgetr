@@ -118,3 +118,4 @@ For this week we will discuss about issues regarding the new project on GitHub n
 1. Figure out how to get Android Studio to run well
 2. Install copilot
 3. start app development progress
+4. Test
