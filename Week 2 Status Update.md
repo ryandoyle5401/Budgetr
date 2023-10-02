@@ -72,10 +72,11 @@ For this week we will discuss about issues regarding the new project on GitHub n
 1. Getting a smooth run with android studio
 
 ### Progress - Robin
-1. 
+1. learned firebase
+2. fixed issues with andriod development
 
 ### Issues - Robin
-1. 
+1. struggled to get git working properly on my mac
 
 ### Progress - David
 1. Installed/Tested Copilot (really cool)
@@ -107,7 +108,9 @@ For this week we will discuss about issues regarding the new project on GitHub n
 3. Start collaborating with Ryan about GUI
 
 ### Robin
-1. 
+1. Start writing firebase code
+2. Pull the project from git
+3. Get on the same page as David with firebase.
 
 ### David
 1. Learn more about the git commands (how to use in AS)
