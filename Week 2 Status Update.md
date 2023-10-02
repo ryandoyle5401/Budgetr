@@ -115,6 +115,6 @@ For this week we will discuss about issues regarding the new project on GitHub n
 3. Get on same page as Robin with Firebase 
 
 ### Mitkumar
-1. Figure out how to get android studio to run well
+1. Figure out how to get Android Studio to run well
 2. Install copilot
 3. start app development progress
