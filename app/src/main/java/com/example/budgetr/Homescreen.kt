@@ -22,7 +22,7 @@ class Homescreen : ComponentActivity() {
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colorScheme.background
                 ) {
-                    Greeting4("Android")
+                    Greeting4("Budgetr")
                 }
             }
         }
