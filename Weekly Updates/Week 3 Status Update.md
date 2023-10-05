@@ -70,8 +70,10 @@ This week's discussion will involve clarifying questions with the ER diagram and
 
 
 ### Progress - Josh
-
+1. Learned about jetpack compose and how to creat layouts
+2. Did some research for designing login screen 
 ### Issues - Josh
+1. Figuring out screen switching with jetpack compose
 
 
 ### Progress - Robin
@@ -96,6 +98,9 @@ This week's discussion will involve clarifying questions with the ER diagram and
 3. Work on code for Homescreen
 
 ### Josh
+1. Start working on code for home and login screen
+2. Do more research on how to switch between screens
+3. Make sure android studio is up to date
 
 
 ### Robin
