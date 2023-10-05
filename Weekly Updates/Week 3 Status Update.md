@@ -11,13 +11,22 @@ This week's discussion will involve clarifying questions with the ER diagram and
 
 ## Group Progress & Issues
 ### Progress
-
+1. Everyone successfully pulled the code and can use Git features in the IDE
+2. Created a Firebase project for Budgetr
+3. Registered Budgetr with the Firebase project
+4. Found resources on how to use Firebase with a Jetpack Compose Android Studio project
 
 ### Issues
-
+1. We know how to create layouts, but we still haven't figured out how to go from one screen to the next
+2. Not sure how to create tables in the database yet
+3. Not sure how to read/write to database yet
 
 ## Group Goals for Next Week
-
+1. Figure out screen switching
+2. Work on screen layouts
+3. Work on backend logic
+4. Work on creating tables in database
+5. Learn how to read/write to the database
 
 # Member Contributions
 
