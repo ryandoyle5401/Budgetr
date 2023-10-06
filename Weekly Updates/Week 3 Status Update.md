@@ -82,8 +82,13 @@ This week's discussion will involve clarifying questions with the ER diagram and
 
 
 ### Progress - David
+1. Integrated Firebase
+2. Began some work on Database and Authentification
+3. Progressed on learning git
 
 ### Issues - David
+1. Started the week unable to pull the code (now fixed)
+   
 
 
 ### Progress - Mitkumar
@@ -107,6 +112,9 @@ This week's discussion will involve clarifying questions with the ER diagram and
 
 
 ### David
+1. Add tables
+2. Finish authentification
+3. Continue backend work 
  
 
 ### Mitkumar
