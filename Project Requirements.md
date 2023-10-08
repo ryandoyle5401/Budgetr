@@ -43,7 +43,7 @@ categories together broken down into fractional pie slices.
 <strong>2 Stretch Features:</strong>
 1. A 'Recent Activity' pane that automatically updates when expenses are added
 1. Notifications of too much spending
-<br>
+
 ## Use Cases
 <strong>Creating an expense category to track</strong>  
 <strong>Actor:</strong> A user wanting to add something to their budget.  
@@ -210,3 +210,13 @@ programming language.
 Once we have our UI design up and running, we can then ask fellow classmates, friends, or family to test out our design
 implementation and give feedback on their preference and criticism. Doing so can give us a better idea of how to properly
 proceed with our application.
+
+## Software Architecture
+
+
+## Software Design
+
+
+## Coding Guidelines
+<strong>Kotlin Style Guide:</strong>  
+Link to the official [Kotlin Style Guide](https://developer.android.com/kotlin/style-guide)
