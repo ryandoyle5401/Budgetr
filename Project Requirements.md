@@ -212,11 +212,67 @@ implementation and give feedback on their preference and criticism. Doing so can
 proceed with our application.
 
 ## Software Architecture
+<strong>Major Software Components:</strong>  
+- Kotlin Programming Language
+- Firebase Database
 
+<strong>Interface Between Components:</strong>  
+The interface between Kotlin and the Firebase database will be a Kotlin class. Within this class we plan on having code that allows our program to both write data to the database and have data sent from the database to the program. With this in place, we should be able to store any new data the user enters and retrieve any data they have previously entered.
+
+<strong>Data the System Stores:</strong>  
+This system should store information from the user's profile like their first name, last name, email address, phone number password, and any answers they provide to security questions. Additionally, the system will store their settings like their expense categories, their expenses (in dollar amounts), their set limits (in dollar amounts). Both this data and the user's profile information will all be stored in a database.  
+
+<strong>Alternatives:</strong>  
+An alternative to using Kotlin as our primary programming language, we could use Java as an alternative to develop an Android app.  
+Java Pros:  
+- More documentation
+- More examples/programs created that use Java
+- We as a team have more experience using Java
+
+Java Cons:  
+- More cumbersome compared to Kotlin
+- Becoming more of an outdated language
+- Less features compared to Kotlin e.g. type inference
+
+One alternative to the Firebase database would be Microsoft Azure  
+Azure Pros:  
+- More features, like ease in scaling for larger projects
+- More free storage
+- Good analytical tools
+
+Azure Cons:  
+- Unlike Firebase, Azure was not created by Google, so, Azure doesn't integrate with android apps in Android Studio as easily.
+- Access is through a Microsoft account, whereas Firebase uses Google/Gmail account
+- Setup with Azure isn't as simple and easy as it is with Firebase
 
 ## Software Design
+<strong>Kotlin:</strong>  
+Kotlin is a cross-platform, high-level programming language that is interoperable with Java. Kotlin compiles to Java bytecode and uses the Java Virtual Machine to run its code.
 
-
+<strong>Firebase:</strong>
 ## Coding Guidelines
 <strong>Kotlin Style Guide:</strong>  
-Link to the official [Kotlin Style Guide](https://developer.android.com/kotlin/style-guide)
+Link to the official [Kotlin Style Guide](https://developer.android.com/kotlin/style-guide)  
+Link to the official [KDoc documentation](https://kotlinlang.org/docs/kotlin-doc.html)  
+Link to the official [KDoc Dokka tool documentation](https://kotlinlang.org/docs/dokka-introduction.html)  
+<strong>Why we chose this style and documentation:</strong>  
+We chose this style and documentation because it's the style and documentation on the Android Developer and Kotlin website, so we figured it would be best to use what is recommeneded by those who develop Android apps and those who wrote the programming language.  
+<strong>How we plan to enforce this:</strong>  
+We plan on enforcing this by having the guides linked within the GitHub repo, and all members will need to look over the guides. This way, if any member ever has a question about how to format something, they can easily refer to the guides to try and find an answer.  
+
+### Risk Assessment  
+Risks:
+1. Communication with database
+2. Communication between frontend and backend
+3. Saving/Accessing different user's settings and info
+4. Displaying data graphically and accurately
+5. ???
+
+#### Communication with Database:
+<strong>Likelihood of occurring:</strong> medium  
+<strong>Impact if it occurs:</strong> high  
+<strong>Evidence:</strong> We believe the likelihood of this occurring is medium because we’ve never used Firebase with Android Studio, and the impact would be high because if we can’t store/retrieve data, we can’t have a functioning app.  
+<strong>Steps to reduce likelihood/impact and improve estimates:</strong>  
+<strong>Plan for detecting problem:</strong>  
+<strong>Mitigation Plan:</strong>  
+
