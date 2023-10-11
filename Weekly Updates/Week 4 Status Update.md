@@ -11,11 +11,16 @@
 
 ## Group Progress & Issues
 ### Progress
-
+1. Worked on the Login screen class
+2. Explored around with the database to gain familiarity
+3. Learned more about screen navigation  
 ### Issues
-
+1. Was not able to successfully test database with the program
+2. Issues with database files in Android Studio  
 ## Group Goals for Next Week
-
+1. Create data to test database and program communication
+2. Work on switching between multiple screens
+3. Continue working on other screen layouts
 # Member Contributions
 
 ## Individual Goals from Previous Week
@@ -40,9 +45,10 @@
 
 ## Individual Progress & Issues
 ### Progress - Ryan
-
+1. Learned more about switching between screens
+2. Worked more on Login screen
 ### Issues - Ryan
-
+1. Did not successfully implement screen switching  
 ### Progress - Josh
 
 ### Issues - Josh
@@ -61,7 +67,9 @@
   
 ## Individual Goals for Next Week
 ### Ryan
-
+1. Work with Josh to successfully switch screens.
+2. Work with Josh on implementing screen swtiching code with other screens
+3. Help out with database if possible  
 ### Josh
 
 ### Robin
