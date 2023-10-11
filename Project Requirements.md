@@ -311,11 +311,11 @@ Simply running the app, interacting with the app, and analyzing the output shoul
 
 #### Displaying data graphically and accurately:
 <strong>Likelihood of occurring:</strong>  
- 
+ Medium
 <strong>Impact if it occurs:</strong>  
-
+high
 <strong>Evidence:</strong>  
-
+We assert that this is a medium because it can be difficult to accurately display graphical data. If the data is inaccurately displayed, it can be difficult for consumers to keep track of their expenses.
 <strong>Steps to reduce likelihood/impact and improve estimates:</strong>  
   
 <strong>Plan for detecting problem:</strong>  
