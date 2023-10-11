@@ -269,10 +269,68 @@ Risks:
 5. ???
 
 #### Communication with Database:
-<strong>Likelihood of occurring:</strong> medium  
-<strong>Impact if it occurs:</strong> high  
-<strong>Evidence:</strong> We believe the likelihood of this occurring is medium because we’ve never used Firebase with Android Studio, and the impact would be high because if we can’t store/retrieve data, we can’t have a functioning app.  
+<strong>Likelihood of occurring:</strong>  
+medium  
+<strong>Impact if it occurs:</strong>  
+high  
+<strong>Evidence:</strong>  
+We believe the likelihood of this occurring is medium because we’ve never used Firebase with Android Studio, and the impact would be high because if we can’t store/retrieve data, we can’t have a functioning app.  
 <strong>Steps to reduce likelihood/impact and improve estimates:</strong>  
+We plan on reducing the likelihood of something like this from happening by utilizing resources on the Firebase website, Android Studio website, and any other sites that have information on getting Firebase and an Android Studio project to communicate with each other. To improve our estimates of the likelihood and the impact, we believe reviewing the resources to get the program and the database to communicate will increase our knowledge and experience with Firebase and Android Studio.  
 <strong>Plan for detecting problem:</strong>  
+To detect the problem, we can create simple tests. For example, we can create test data in the program, send it to the database, and then check the database to see if the data was successfully sent. Then we can add test data to the database and pull that from the database into the project and see if we get the test data.  
+<strong>Mitigation Plan:</strong>  
+If this issue arises and can’t be resolved in a timely manner, we may have to store data within the app itself.  
+
+#### Communication between Frontend/Backend:
+<strong>Likelihood of occurring:</strong>  
+low  
+<strong>Impact if it occurs:</strong>  
+high  
+<strong>Evidence:</strong>  
+In terms of the likelihood of this occurring, we believe this would be ranked as low. We say this because, for example, if there is a button on the screen (frontend), within the code there should also be an action listener, so when the user presses the button, code within the action listener should execute (backend). Regarding the impact on the app if this issue were to occur, it would be detrimental because any interactions the user has with the frontend wouldn’t be communicated to the backend. This means any input the user enters doesn’t produce any output, which defeats the purpose of the app.  
+<strong>Steps to reduce likelihood/impact and improve estimates:</strong>  
+To reduce the likelihood of this issue occurring, we will make sure that every frontend component the user interacts with, like textboxes and buttons, will have action listeners attached to them that run the appropriate code when it detects an action. In order to improve our estimates, we will test out all frontend components with some dummy backend code to make sure the frontend component calls the dummy backend code when activated.    
+<strong>Plan for detecting problem:</strong>  
+Simply running the app, interacting with the app, and analyzing the output should be sufficient enough to determine if the frontend is successfully communicating with the backend of the app.  
+<strong>Mitigation Plan:</strong>  
+To help mitigate this, we plan on making sure every part of the frontend of the app that the user can interact with has corresponding code to execute when the user does interact with that component. We will test this out to make sure that the code that’s supposed to run runs, even if it may produce an error, as long as it runs, everything should be fine.  
+
+#### Saving/Accessing different user's settings and info:
+<strong>Likelihood of occurring:</strong>  
+low  
+<strong>Impact if it occurs:</strong>  
+high  
+<strong>Evidence:</strong>  
+In terms of the likelihood of this occurring, we believe this would be ranked as low. We say this because, for example, if there is a button on the screen (frontend), within the code there should also be an action listener, so when the user presses the button, code within the action listener should execute (backend). Regarding the impact on the app if this issue were to occur, it would be detrimental because any interactions the user has with the frontend wouldn’t be communicated to the backend. This means any input the user enters doesn’t produce any output, which defeats the purpose of the app. 
+<strong>Steps to reduce likelihood/impact and improve estimates:</strong>  
+To reduce the likelihood of this issue occurring, we will make sure that every frontend component the user interacts with, like textboxes and buttons, will have action listeners attached to them that run the appropriate code when it detects an action. In order to improve our estimates, we will test out all frontend components with some dummy backend code to make sure the frontend component calls the dummy backend code when activated.    
+<strong>Plan for detecting problem:</strong>  
+Simply running the app, interacting with the app, and analyzing the output should be sufficient enough to determine if the frontend is successfully communicating with the backend of the app.  
 <strong>Mitigation Plan:</strong>  
 
+#### Displaying data graphically and accurately:
+<strong>Likelihood of occurring:</strong>  
+ 
+<strong>Impact if it occurs:</strong>  
+
+<strong>Evidence:</strong>  
+
+<strong>Steps to reduce likelihood/impact and improve estimates:</strong>  
+  
+<strong>Plan for detecting problem:</strong>  
+ 
+<strong>Mitigation Plan:</strong>  
+
+#### ???:
+<strong>Likelihood of occurring:</strong>  
+  
+<strong>Impact if it occurs:</strong>  
+  
+<strong>Evidence:</strong>  
+  
+<strong>Steps to reduce likelihood/impact and improve estimates:</strong>  
+  
+<strong>Plan for detecting problem:</strong>  
+  
+<strong>Mitigation Plan:</strong> 
