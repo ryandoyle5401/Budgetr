@@ -1,7 +1,7 @@
 # Team Report
 
 ## Agenda
-
+For this week, we'd like to ask some more questions about the possible design of the database.  
 ## Group Goals from Previous Week
 1. Figure out screen switching
 2. Work on screen layouts
