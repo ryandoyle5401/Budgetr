@@ -58,8 +58,11 @@ For this week, we'd like to ask some more questions about the possible design of
 ### Issues - Robin
 
 ### Progress - David
-
+1. Found and tried out similar repo (good resource)
+2. Researched firebase interfacing
 ### Issues - David
+1. Didn't test out databse to see if it's really working
+2. Did not work more on authentification
 
 ### Progress - Mitkumar
   
@@ -75,5 +78,7 @@ For this week, we'd like to ask some more questions about the possible design of
 ### Robin
 
 ### David
+1. Actually test and implement a database
+2. Finalize the ER diagrams for databases for each page
  
 ### Mitkumar
