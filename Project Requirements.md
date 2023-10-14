@@ -12,7 +12,7 @@
 Repo [link](https://github.com/ryandoyle5401/Budgetr.git)
 
 <strong>Roles:</strong>
-- UI Designer/Frontend - Ryan
+- UI Designer/Frontend - Ryan, Josh
 - Backend - Josh, Mit
 - Database - David, Robin
 
@@ -220,7 +220,7 @@ proceed with our application.
 The interface between Kotlin and the Firebase database will be a Kotlin class. Within this class we plan on having code that allows our program to both write data to the database and have data sent from the database to the program. With this in place, we should be able to store any new data the user enters and retrieve any data they have previously entered.
 
 <strong>Data the System Stores:</strong>  
-This system should store information from the user's profile like their first name, last name, email address, phone number password, and any answers they provide to security questions. Additionally, the system will store their settings like their expense categories, their expenses (in dollar amounts), their set limits (in dollar amounts). Both this data and the user's profile information will all be stored in a database.  
+This system should store information from the user's profile like their first name, last name, email address, phone number password, and any answers they provide to security questions. Additionally, the system will store their settings like their expense categories, their expenses (in dollar amounts), their set limits (in dollar amounts). Both this data and the user's profile information will all be stored in a database. As part of our design, the database will have a table for storing the user's account information. Then, each account table will be linked to a budget or settings table that stores information about the user's customized budget.  
 
 <strong>Alternatives:</strong>  
 An alternative to using Kotlin as our primary programming language, we could use Java as an alternative to develop an Android app.  
@@ -247,9 +247,10 @@ Azure Cons:
 
 ## Software Design
 <strong>Kotlin:</strong>  
-Kotlin is a cross-platform, high-level programming language that is interoperable with Java. Kotlin compiles to Java bytecode and uses the Java Virtual Machine to run its code.
+Kotlin is a cross-platform, high-level programming language that is interoperable with Java. Kotlin compiles to Java bytecode and uses the Java Virtual Machine to run its code. Part of the aspects of Kotlin that make it a worthy programming language are the following: packages, classes, functions, objects and their properties, interfaces, enums, data classes, and companion objects. Packages are used to organize related classes and functions into a hierarchical structure. Classes create an outline for unique objects to be made with their own properties. Functions define an object's behavior, and they allow objects to perform tasks. Objects are created from classes, and the object's properties both help to define the object and make it unique from other objects. Interfaces are used to outline functions that inheriting classes must define themselves. Enums are used to name a set of constant values that a variable can take on. Data classes are utilized to store data. Companion objects define members that are associated with the class itself rather than an object of the class. Together all of these features of Kotlin combine to make creating an Android application possible.  
 
-<strong>Firebase:</strong>
+<strong>Firebase:</strong>  
+Firebase is a database created by Google, and it is designed to store data primarily for web and mobile applications. Some of the components of Firebase include a FirebaseApp, FirebaseOptions, FirebaseAuth, Firebase Realtime Database, Firebase Storage, Firebase Cloud Messaging, and Firebase Analytics. The FirebaseApp is simply an application that acts as the entry point for Firebase services. FirebaseOptions class is used to configure Firebase options, such as the project ID, API key, and application name. FirebaseAuth includes services revolving around user authentication for signing up or signing in to an application. The Firebase Realtime Database includes packages for storing, retrieving, and changing data. Firebase Storage is a collection of classes that deal with interacting with Firebase Cloud Storage which can store files and objects. Firebase Cloud Messaging is used to send notifications to applications, and Firebase Analytics provide insight into both the user's behvaior and their app usage. Combined together, all these features used make Firebase ideal for authenticating users, storing, retrieving, and modifying their data, and analyzing their data. When used with Kotlin, the Firebase features combined with Kotlin features are ideal for creating a mobile Android application.  
 ## Coding Guidelines
 <strong>Kotlin Style Guide:</strong>  
 Link to the official [Kotlin Style Guide](https://developer.android.com/kotlin/style-guide)  
@@ -266,7 +267,7 @@ Risks:
 2. Communication between frontend and backend
 3. Saving/Accessing different user's settings and info
 4. Displaying data graphically and accurately
-5. ???
+5. Database Design/Implementaion
 
 #### Communication with Database:
 <strong>Likelihood of occurring:</strong>  
@@ -308,32 +309,51 @@ To reduce the likelihood of this issue occurring, we will make sure that every f
 <strong>Plan for detecting problem:</strong>  
 Simply running the app, interacting with the app, and analyzing the output should be sufficient enough to determine if the frontend is successfully communicating with the backend of the app.  
 <strong>Mitigation Plan:</strong>  
+Mitigation can be achieved through altering either our methods of sending/storing data in the database or retrieving/displaying the data sent from the database. We should continue to tweak the methods until we can consistently send information to the database, have the database save it, and then pull the information down from the appropriate table(s) within the database and display it in the app.  
 
 #### Displaying data graphically and accurately:
 <strong>Likelihood of occurring:</strong>  
- Medium
- 
+ medium  
 <strong>Impact if it occurs:</strong>  
-high
-
+high  
 <strong>Evidence:</strong>  
-We assert that this is a medium because it can be difficult to accurately display graphical data. If the data is inaccurately displayed, it can be difficult for consumers to keep track of their expenses.
-
+We assert that this is a medium because it can be difficult to accurately display graphical data. If the data is inaccurately displayed, it can be difficult for consumers to keep track of their expenses. However, for the impact on our overall application, we rank this as medium because graphics depicting the user's spending isn't as important as the user being able to keep create their own custom budget and have the app track everything for them.  
 <strong>Steps to reduce likelihood/impact and improve estimates:</strong>  
-To ...
+Reducing the likelihood of this occurring can be reached through finding good resources that lay out how to insert such graphics into a Kotlin application. With these resources, we can have a better idea of what we need to program and how to do it. As a way of improving our estimates, we can try out what we find with the resources we find. If what we find proves useful, we can get a better idea of whether or not we can implement charts within our own application.  
 <strong>Plan for detecting problem:</strong>  
- 
+To detect such a problem, we can simply create test data and see if it displays and displays accurately. If we can't get data to display or display it accurately, we know we'll have to go back and tweak the code.  
 <strong>Mitigation Plan:</strong>  
-
-#### ???:
+Should an issue like this occur, as a way to mitigate it, we could implement some sort of substitution. For example, instead of displaying a graphic that shows how much the user has spent across all of their expense categories, we could display a scrollable list with the names of all expense categories and their corresponding value listed out side-by-side.  
+#### Database Design/Implementation:
 <strong>Likelihood of occurring:</strong>  
-  
+medium    
 <strong>Impact if it occurs:</strong>  
-  
+medium   
 <strong>Evidence:</strong>  
-  
+We believe this issue is ranked medium in terms of the likelihood of this occurring. This is because none of us have much experience actually designing and implementing a database. Also, we believe the impact of this would be ranked as medium because if one database design/implementation doesn't work out, we can always re-design and re-implement it.    
 <strong>Steps to reduce likelihood/impact and improve estimates:</strong>  
-  
+As a way to reduce the likelihood of this occurring, we will discuss about how the database should be designed based on what we know. Then, we also plan on asking clarifying questions about the database's design. To improve our estimates, we will try to make the design as simple as possible while still fulfilling all the tasks we need it to do. From there we will attempt to implement the database and test it to see if there needs to be any adjustments.  
 <strong>Plan for detecting problem:</strong>  
-  
-<strong>Mitigation Plan:</strong> 
+To detect the problem, should it occur, we will review our database design and ask any questions any of us have about it. Then, we will attempt to create the database according to the design. Afterwards, we will use test data to see if the database is functions as we had planned.    
+<strong>Mitigation Plan:</strong>  
+If an error like this occurs, we will work on re-designing and re-implementing the database.  
+### Project Schedule  
+<strong>Major Milestones</strong>  
+Screen Design - design what each screen should look like by end of Sept.  
+Functionality Design - design what should happen when a button is pressed by end of Sept.  
+Firebase Project - learn about and create a Firebase project by end of Sept.  
+Screen Implementation - work on implementation by mid-Oct.  
+Functionality Implementation - implement the design by mid-Oct.  
+Firebase Design - design the database for the Firebase project by mid-Oct. 
+Screen Test - test the screen layouts and the functions of their buttons by end of Oct.  
+Firebase Implementation - implement the design by end of Oct.  
+Data Storage/Retrieval - test out sending and receiving data to/from the database by early Nov.    
+Graphics - work on getting graphics to display by early to mid-Nov.  
+
+<strong>Dependencies</strong>  
+In order to test out the buttons on the different screens, the screens have to be designed and implemented as well as the logic behind the buttons has to be designed and implemented before we can successfully test everything out.  
+
+For testing data storage and retrieval, the screens have to be laid out, the buttons need to make calls to the database, and the database needs to be designed and implemented.  
+
+### Documentation Plan  
+Our plan for documentation is to create a user guide as a markdown file.
