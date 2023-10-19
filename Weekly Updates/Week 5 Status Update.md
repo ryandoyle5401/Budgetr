@@ -29,7 +29,8 @@ Discuss the Software Architecture assignment
 2. Work with Josh on implementing screen swtiching code with other screens
 3. Help out with database if possible  
 ### Josh's Goals
-
+1. Took time to work on screen switching with Ryan
+2. Got a user interface (GUI) set up
 ### Robin's Goals
 
 ### David's Goals
@@ -45,9 +46,11 @@ Discuss the Software Architecture assignment
 1. Some minor issues with Home screen  
 2. Didn't get to help out with database too much
 ### Progress - Josh
-
+1. Worked with ryan on some of the screens
+2. Did some research for GUI implementations
 ### Issues - Josh
-
+1. There are some minor problems with some GUI
+2. Getting firebase to smoothly connect
 ### Progress - Robin
 
 ### Issues - Robin
@@ -65,7 +68,8 @@ Discuss the Software Architecture assignment
 1. Check out the similar GitHub that was found.
 2. Work out some issues with Home screen.    
 ### Josh
-
+1. Figure out how to implement user login
+2. Fix up GUI to be more user friendly
 ### Robin
 
 ### David
