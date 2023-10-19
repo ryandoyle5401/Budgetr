@@ -56,8 +56,12 @@ Discuss the Software Architecture assignment
 ### Issues - Robin
 
 ### Progress - David
+1. Confirmed ER diagrams
+2. Started database
+3. Learned more about the other classes involved in the app
 
 ### Issues - David
+1. Finding spots to test the database was a struggle at first
 
 ### Progress - Mitkumar
   
@@ -73,5 +77,7 @@ Discuss the Software Architecture assignment
 ### Robin
 
 ### David
+1. Continue working with the database
+2. Have working tests on the database to prove its viability
 
 ### Mitkumar
