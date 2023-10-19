@@ -1,7 +1,7 @@
 # Team Report
 
 ## Agenda
-
+Discuss the Software Architecture assignment
 ## Group Goals from Previous Week
 1. Create data to test database and program communication
 2. Work on switching between multiple screens
@@ -39,9 +39,11 @@
 
 ## Individual Progress & Issues
 ### Progress - Ryan
-1. 
+1. Worked with Josh on some of the screens
+2. Found the article on making a decent Home screen layout
 ### Issues - Ryan
-
+1. Some minor issues with Home screen  
+2. Didn't get to help out with database too much
 ### Progress - Josh
 
 ### Issues - Josh
@@ -60,7 +62,8 @@
   
 ## Individual Goals for Next Week
 ### Ryan
-  
+1. Check out the similar GitHub that was found.
+2. Work out some issues with Home screen.    
 ### Josh
 
 ### Robin
