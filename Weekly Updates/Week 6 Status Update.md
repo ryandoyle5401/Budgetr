@@ -44,9 +44,10 @@ Discuss about user sign-in/login and user authentication with Firebase
 1. Wasn't able to completely work out issues with Home screen
 2. Had some build issues
 ### Progress - Josh
-
+1. Getting graphics to work on app
+2. Got switching between screens to work
 ### Issues - Josh
-
+1. Had some gradle issues
 ### Progress - Robin
 
 ### Issues - Robin
@@ -70,6 +71,9 @@ Discuss about user sign-in/login and user authentication with Firebase
 4. Learn about GitHub Actions
 5. Work on Home screen some more   
 ### Josh
+1. Learn Github Actions
+2. Write some test for codes
+3. Potentially start working on some app GUI
 
 ### Robin
 
