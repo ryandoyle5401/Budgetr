@@ -1,7 +1,7 @@
 # Team Report
 
 ## Agenda
-
+Discuss about user sign-in/login and user authentication with Firebase
 ## Group Goals from Previous Week
 1. Tweak database project and program
 2. Utilize some stuff from the Home Screen article
@@ -9,9 +9,12 @@
 
 ## Group Progress & Issues
 ### Progress
-
+1. Made some more progress with the database
+2. Resolved some issues in Home screen code
+3. Found some code/classes that are very similar to what we want our project to do
 ### Issues
- 
+1. Still some bugs with the Home screen code
+2. User sign-in/login and authentication still not fully completed 
 ## Group Goals for Next Week
 1. Learn more about JUnit
 2. Implement JUnit into the project
@@ -39,6 +42,7 @@
 3. Found some very similar stuff from the similar GitHub repo
 ### Issues - Ryan
 1. Wasn't able to completely work out issues with Home screen
+2. Had some build issues
 ### Progress - Josh
 
 ### Issues - Josh
@@ -60,7 +64,8 @@
 1. Do some JUnit research
 2. Figure out how to include JUnit in the code
 3. Write at least two tests for some basic code
-4. Learn about GitHub Actions   
+4. Learn about GitHub Actions
+5. Work on Home screen some more   
 ### Josh
 
 ### Robin
