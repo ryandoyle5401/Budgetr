@@ -211,6 +211,51 @@ Once we have our UI design up and running, we can then ask fellow classmates, fr
 implementation and give feedback on their preference and criticism. Doing so can give us a better idea of how to properly
 proceed with our application.
 
+<strong>Test Automation</strong>  
+For this project we will be using JUnit 5 as our automated test infrastructure. We chose this test infrastructure because JUnit works well with Kotlin code and Gradle
+has native support for it.  
+
+<strong>Add a New Test</strong>  
+To add a new test:
+- Within the 'test' subpackage, create a new class
+- Name the class something like "className_test"
+- Add necessary imports
+- Create a function named "funcName_test" with the @Test annotation to test a function from your code
+- Add an 'assert' function and give appropriate arguments
+
+<strong>Continuous Integraton</strong>
+Our continuous integration service we will be using is GitHub Actions. We're using GitHub Actions because of its ease of use and seamless integration.  
+
+<strong>Pros and Cons</strong>
+GitHub Actions vs. GitLab vs. Travis
+GtiHub Actions Pros:
+- We are using GitHub to host our code
+- Simpler configuration
+- More templates on the marketplace
+
+GitHub Actions Cons:
+- GitLab is like GitHub and GitHub Actions bundled together
+- Less built-in features compared to GitLab
+
+GitLab Pros:
+- More tools compared to GitHub Actions
+- More for larger projects
+- Includes code hosting, CI/CD, all in one platform
+
+GitLab Cons:
+- We are not using GitLab to host our code
+- Doesn't integrate as easily with GitHub
+- Initial setup/configuration can be more complex
+
+Travis Pros:
+- Integrates well with Docker
+- Supports many programming frameworks
+- Offers more customization and configuration options
+Travis Cons:
+- Non-native to GitHub
+- Different pricing model from GitHub Actions
+- No marketplace  
+
 ## Software Architecture
 <strong>Major Software Components:</strong>  
 - Kotlin Programming Language
