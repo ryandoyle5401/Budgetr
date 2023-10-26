@@ -52,8 +52,11 @@ Discuss about user sign-in/login and user authentication with Firebase
 ### Issues - Robin
 
 ### Progress - David
+1. Building App works
+2. Thought about ways to test database
 
 ### Issues - David
+1. Did not actually write tests for DB :(
 
 ### Progress - Mitkumar
   
@@ -71,5 +74,9 @@ Discuss about user sign-in/login and user authentication with Firebase
 ### Robin
 
 ### David
-
+1. Rework Database
+2. Get in better communication with the team
+3. Write at least one test for database
+4. Learn Github Actions
+   
 ### Mitkumar
