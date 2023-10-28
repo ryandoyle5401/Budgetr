@@ -265,13 +265,9 @@ CI Build Test Executions:
 - Security Tests
 - UI/UX Tests
 
-CI Build Trigger:
+CI Build Triggers:
 - Push to a repository
 - Pull/Merge Request
-- Manual Trigger
-- API Calls
-- Dependent Builds
-- Scheduled Builds
 
 ## Software Architecture
 <strong>Major Software Components:</strong>  
