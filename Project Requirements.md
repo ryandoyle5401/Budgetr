@@ -254,7 +254,24 @@ Travis Pros:
 Travis Cons:
 - Non-native to GitHub
 - Different pricing model from GitHub Actions
-- No marketplace  
+- No marketplace
+
+CI Build Test Executions:
+- Unit Tests
+- Intergration Tests
+- Functional Tests
+- End-to-end Tests
+- Performance Tests
+- Security Tests
+- UI/UX Tests
+
+CI Build Trigger:
+- Push to a repository
+- Pull/Merge Request
+- Manual Trigger
+- API Calls
+- Dependent Builds
+- Scheduled Builds
 
 ## Software Architecture
 <strong>Major Software Components:</strong>  
