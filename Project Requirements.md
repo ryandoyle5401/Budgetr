@@ -217,11 +217,16 @@ has native support for it.
 
 <strong>Add a New Test</strong>  
 To add a new test:
-- Within the 'test' subpackage, create a new class
-- Name the class something like "className_test"
-- Add necessary imports
+- Within the 'test' subpackage, create a new class  
+![Create Test Class](Pictures/create_test_class.png)
+- Name the class something like "className_test"  
+![Name Test Class](Pictures/name_test_class.png)
+- Add necessary imports  
+![Add Imports](Pictures/add_imports.png)
 - Create a function named "funcName_test" with the @Test annotation to test a function from your code
-- Add an 'assert' function and give appropriate arguments
+![Add Test Function](Pictures/create_test_func.png)
+- Add an 'assert' function and give appropriate arguments  
+![Add Assert](Pictures/assert.png)
 
 <strong>Continuous Integraton</strong>
 Our continuous integration service we will be using is GitHub Actions. We're using GitHub Actions because of its ease of use and seamless integration.  
