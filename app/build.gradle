@@ -15,6 +15,12 @@ android {
     namespace 'com.example.budgetr'
     compileSdk 34
 
+    testOptions{
+        unitTests.all {
+            useJUnitPlatform()
+        }
+    }
+
     defaultConfig {
         applicationId "com.example.budgetr"
         minSdk 28
@@ -75,6 +81,8 @@ dependencies {
     implementation 'io.sentry:sentry-compose-android:6.13.1'
     implementation 'androidx.navigation:navigation-runtime-ktx:2.7.4'
 
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.10.0'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.10.0'
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.5'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
