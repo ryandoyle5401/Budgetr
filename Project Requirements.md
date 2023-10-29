@@ -271,8 +271,7 @@ CI Build Test Executions:
 - UI/UX Tests
 
 CI Build Triggers:
-- Push to a repository
-- Pull/Merge Request
+- Pushing to the repository
 
 ## Software Architecture
 <strong>Major Software Components:</strong>  
