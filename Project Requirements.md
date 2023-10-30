@@ -229,7 +229,12 @@ To add a new test:
 ![Add Assert](Pictures/assert.png)
 
 <strong>Continuous Integraton</strong>
-Our continuous integration service we will be using is GitHub Actions. We're using GitHub Actions because of its ease of use and seamless integration.  
+Our continuous integration service we will be using is GitHub Actions. We followed these steps to setup GitHub Actions:
+1. Within the main branch in the GitHub repo, create the directory .github/workflows and create a .yml file here
+2. In the .yml file, use the keyword 'on' to specify the type of event to trigger the job to run (example: pushing to the repo)
+3. In the 'jobs:' section, include a 'build:' section to specify the build the tests run on (example: 'ubuntu-latest')
+4. The 'steps:' section specifies the steps taken to complete the job (example: 'uses: actions/checout@v2' for checking out the repo)
+5. Add additional steps to perform other tasks (example: we have steps to setup the Java JDK, the Android SDK, etc.)
 
 <strong>Pros and Cons</strong>
 GitHub Actions vs. GitLab vs. Travis
