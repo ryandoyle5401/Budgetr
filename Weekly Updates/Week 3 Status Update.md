@@ -77,9 +77,9 @@ This week's discussion will involve clarifying questions with the ER diagram and
 
 
 ### Progress - Robin
-
+1. Learned how to use firebase properly and add features
 ### Issues - Robin
-
+2. Need to learn how to configure firebase with jetpack compose
 
 ### Progress - David
 1. Integrated Firebase
@@ -109,7 +109,8 @@ This week's discussion will involve clarifying questions with the ER diagram and
 
 
 ### Robin
-
+1. Learn how to get firebase and jetpack compose to work together
+2. Add more features
 
 ### David
 1. Add tables
