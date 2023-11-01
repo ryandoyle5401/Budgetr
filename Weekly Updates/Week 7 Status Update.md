@@ -27,7 +27,9 @@
 2. Write some test for codes
 3. Potentially start working on some app GUI
 ### Robin's Goals
-
+1. Help David rework the database
+2. Get on the same page as the group
+3. Get some database functionalites up and running
 ### David's Goals
 1. Rework Database
 2. Get in better communication with the team
