@@ -29,7 +29,8 @@ Discuss about user sign-in/login and user authentication with Firebase
 1. Figure out how to implement user login
 2. Fix up GUI to be more user friendly
 ### Robin's Goals
-
+1. Continue working on adding to the database
+2. Figure out how to access firebase at the same time as david and catch up with him
 ### David's Goals
 1. Continue working with the database
 2. Have working tests on the database to prove its viability
@@ -49,9 +50,10 @@ Discuss about user sign-in/login and user authentication with Firebase
 ### Issues - Josh
 1. Had some gradle issues
 ### Progress - Robin
-
+1. Found a repo that uses firebase with jetpack compose, checking to see how they implemented it well
+2. Thinking of ways to test the database
 ### Issues - Robin
-
+1. wasn't able to test the database
 ### Progress - David
 1. Building App works
 2. Thought about ways to test database
@@ -76,7 +78,9 @@ Discuss about user sign-in/login and user authentication with Firebase
 3. Potentially start working on some app GUI
 
 ### Robin
-
+1. Help David rework the database
+2. Get on the same page as the group
+3. Get some database functionalites up and running
 ### David
 1. Rework Database
 2. Get in better communication with the team
