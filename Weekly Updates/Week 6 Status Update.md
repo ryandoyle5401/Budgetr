@@ -35,6 +35,8 @@ Discuss about user sign-in/login and user authentication with Firebase
 1. Continue working with the database
 2. Have working tests on the database to prove its viability
 ### Mitkumar's Goals
+1. Continue working on UI and backend
+2. Fix any code running issues on device and emulator
 
 ## Individual Progress & Issues
 ### Progress - Ryan
@@ -62,8 +64,11 @@ Discuss about user sign-in/login and user authentication with Firebase
 1. Did not actually write tests for DB :(
 
 ### Progress - Mitkumar
+1. Started working on expense page UI
+2. Helped with home screen UI
   
 ### Issues - Mitkumar
+1. No issues
   
 ## Individual Goals for Next Week
 ### Ryan
@@ -86,5 +91,7 @@ Discuss about user sign-in/login and user authentication with Firebase
 2. Get in better communication with the team
 3. Write at least one test for database
 4. Learn Github Actions
-   
+
 ### Mitkumar
+1. Want to make the UI look more modern and user friendly
+
