@@ -32,7 +32,8 @@ Discuss the Software Architecture assignment
 1. Took time to work on screen switching with Ryan
 2. Got a user interface (GUI) set up
 ### Robin's Goals
-
+1. Implement jetpack compose with firebase
+2. Figure out how to fix gradle and dependency issue
 ### David's Goals
 1. Actually test and implement a database
 2. Finalize the ER diagrams for databases for each page
@@ -52,9 +53,11 @@ Discuss the Software Architecture assignment
 1. There are some minor problems with some GUI
 2. Getting firebase to smoothly connect
 ### Progress - Robin
-
+1. Figured out the Gradle issue and am able to run and test things now
+2. Made a autehntication / and real time database
 ### Issues - Robin
-
+1. Not sure how to test it properly on the project
+2. It seems like I can't access firebase while Davids on it
 ### Progress - David
 1. Confirmed ER diagrams
 2. Started database
@@ -75,7 +78,8 @@ Discuss the Software Architecture assignment
 1. Figure out how to implement user login
 2. Fix up GUI to be more user friendly
 ### Robin
-
+1. Continue working on adding to the database
+2. Figure out how to access firebase at the same time as david and catch up with him
 ### David
 1. Continue working with the database
 2. Have working tests on the database to prove its viability
