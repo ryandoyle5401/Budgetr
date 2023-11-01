@@ -8,11 +8,20 @@
 
 ## Group Progress & Issues
 ### Progress
-
+1. JUnit included in the project 
+2. GitHub Actions set up
+3. Included basic tests that successfully ran
+4. Included some documentation for some files
 ### Issues
- 
+1. Problems testing the database
+2. Trouble getting Dokka setup
+3. Gradle commands not working
 ## Group Goals for Next Week
-
+1. Add more documentation
+2. Work on database and testing it
+3. Improve communication
+4. Work on Dokka
+5. Get gradle commands to work
 # Member Contributions
 
 ## Individual Goals from Previous Week
@@ -39,9 +48,14 @@
 
 ## Individual Progress & Issues
 ### Progress - Ryan
-
+1. Learned more about JUnit and creating tests
+2. Successfully integrated JUnit into code
+3. Worked on creating JUnit test
+4. Learned about setting up GitHub Actions
 ### Issues - Ryan
-
+1. Trouble finding how to setup Dokka properly
+2. Gradle commands not recognized
+3. Ran out of time to focus on Home screen
 ### Progress - Josh
 
 ### Issues - Josh
@@ -59,7 +73,9 @@
   
 ## Individual Goals for Next Week
 ### Ryan
-
+1. Figure out how to implement Dokka
+2. Figure out why gradle commands aren't working
+3. Find out more about how to test Composable functions
 ### Josh
 
 ### Robin
