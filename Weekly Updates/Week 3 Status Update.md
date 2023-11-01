@@ -64,17 +64,14 @@ This week's discussion will involve clarifying questions with the ER diagram and
 2. Learned how to specify and modify Composables
 3. Have an outline of code for Login Screen
 
-
 ### Issues - Ryan
 1. Figuring out how to navigate between screens within the app
-
 
 ### Progress - Josh
 1. Learned about jetpack compose and how to creat layouts
 2. Did some research for designing login screen 
 ### Issues - Josh
 1. Figuring out screen switching with jetpack compose
-
 
 ### Progress - Robin
 1. Learned how to use firebase properly and add features
@@ -89,12 +86,11 @@ This week's discussion will involve clarifying questions with the ER diagram and
 ### Issues - David
 1. Started the week unable to pull the code (now fixed)
    
-
-
 ### Progress - Mitkumar
-  
-### Issues - Mitkumar
+1. Worked on learning the UI designing
 
+### Issues - Mitkumar
+1. Virtual device stopped working and broke down
    
 ## Individual Goals for Next Week
 ### Ryan
@@ -107,7 +103,6 @@ This week's discussion will involve clarifying questions with the ER diagram and
 2. Do more research on how to switch between screens
 3. Make sure android studio is up to date
 
-
 ### Robin
 1. Learn how to get firebase and jetpack compose to work together
 2. Add more features
@@ -117,6 +112,6 @@ This week's discussion will involve clarifying questions with the ER diagram and
 2. Finish authentification
 3. Continue backend work 
  
-
 ### Mitkumar
-
+1. Figure out the reason for device stoppped working
+2. Start working on code for home and login screen
