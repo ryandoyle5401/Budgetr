@@ -38,6 +38,8 @@ Discuss the Software Architecture assignment
 1. Actually test and implement a database
 2. Finalize the ER diagrams for databases for each page
 ### Mitkumar's Goals
+1. Figure out how to fix gradle and dependency issue
+2. Reinstall android studio and reclone the repo
 
 ## Individual Progress & Issues
 ### Progress - Ryan
@@ -67,8 +69,13 @@ Discuss the Software Architecture assignment
 1. Finding spots to test the database was a struggle at first
 
 ### Progress - Mitkumar
+1. Fixed gradle and dependency issue
+2. Fixed BIOS settings to run the virtual device
+3. Reinstalled Andriod Studio 
+4. Started to help with UI and backend 
   
 ### Issues - Mitkumar
+1. Issues with running the virtual device with the code, updates were not getting changed
   
 ## Individual Goals for Next Week
 ### Ryan
@@ -85,3 +92,5 @@ Discuss the Software Architecture assignment
 2. Have working tests on the database to prove its viability
 
 ### Mitkumar
+1. Continue working on UI and backend
+2. Fix any code running issues on device and emulator

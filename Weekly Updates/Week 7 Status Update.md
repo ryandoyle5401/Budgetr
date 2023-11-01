@@ -45,6 +45,8 @@
 3. Write at least one test for database
 4. Learn Github Actions
 ### Mitkumar's Goals
+1. Want to make the UI look more modern and user friendly
+
 
 ## Individual Progress & Issues
 ### Progress - Ryan

@@ -43,6 +43,8 @@ For this week, we'd like to ask some more questions about the possible design of
 3. Continue backend work
 
 ### Mitkumar's Goals
+1. Figure out the reason for device stoppped working
+2. Start working on code for home and login screen
 
 ## Individual Progress & Issues
 ### Progress - Ryan
@@ -67,8 +69,12 @@ For this week, we'd like to ask some more questions about the possible design of
 2. Did not work more on authentification
 
 ### Progress - Mitkumar
+1. Fixed HAXM issue that i was initially having
+2. Updated computer VM to run the virtual device
   
 ### Issues - Mitkumar
+1. BIOS settings causing gradle errors
+2. Might have to reinstall android studio and reclone the repo
   
 ## Individual Goals for Next Week
 ### Ryan
@@ -85,3 +91,5 @@ For this week, we'd like to ask some more questions about the possible design of
 2. Finalize the ER diagrams for databases for each page
  
 ### Mitkumar
+1. Figure out how to fix gradle and dependency issue
+2. Reinstall android studio and reclone the repo
