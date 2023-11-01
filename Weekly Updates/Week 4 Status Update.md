@@ -35,7 +35,8 @@ For this week, we'd like to ask some more questions about the possible design of
 3. Make sure android studio is up to date
 
 ### Robin's Goals
-
+1. Figure out how to get firebase and jetpack compose to work together
+2. Add more features
 ### David's Goals
 1. Add tables
 2. Finish authentification
@@ -54,9 +55,10 @@ For this week, we'd like to ask some more questions about the possible design of
 ### Issues - Josh
 
 ### Progress - Robin
-
+1. Found documentations on jetpack compose being used with firebase
+2. Working on implementing it
 ### Issues - Robin
-
+1. The project won't run on my mac. Having Gradle and dependency issues
 ### Progress - David
 1. Found and tried out similar repo (good resource)
 2. Researched firebase interfacing
@@ -76,7 +78,8 @@ For this week, we'd like to ask some more questions about the possible design of
 ### Josh
 
 ### Robin
-
+1. Implement jetpack compose with firebase
+2. figure out how to fix gradle and dependency issue
 ### David
 1. Actually test and implement a database
 2. Finalize the ER diagrams for databases for each page
