@@ -4,6 +4,7 @@ import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.darkColorScheme
 import androidx.compose.runtime.Composable
 
+// Define the DarkColorPalette with custom color scheme
 private val DarkColorPalette = darkColorScheme(
   primary = Primary,
   background = Surface,
@@ -31,6 +32,7 @@ fun BudgetrTheme(
 ) {
   val colors = DarkColorPalette
 
+  // Create and apply the MaterialTheme with custom color scheme, typography, and shapes
   MaterialTheme(
     colorScheme = colors,
     typography = Typography,

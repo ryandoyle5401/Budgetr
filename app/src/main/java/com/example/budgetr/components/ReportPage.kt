@@ -23,6 +23,17 @@ import com.example.budgetr.viewmodels.viewModelFactory
 import java.text.DecimalFormat
 import java.time.LocalDate
 
+/**
+ * A composable function for rendering a report page.
+ *
+ * This composable function is responsible for displaying a report page that includes charts, expenses,
+ * and other information for a specific time range and recurrence.
+ *
+ * @param innerPadding The padding values for the inner content of the page.
+ * @param page The page number for the report.
+ * @param recurrence The recurrence (e.g., Weekly, Monthly, Yearly) for the report.
+ * @param vm The view model for the report page.
+ */
 @Composable
 fun ReportPage(
   innerPadding: PaddingValues,
@@ -34,6 +45,7 @@ fun ReportPage(
       ReportPageViewModel(page, recurrence)
     })
 ) {
+  // Collect and store the UI state from the view model.
   val uiState = vm.uiState.collectAsState().value
 
   Column(
@@ -44,6 +56,7 @@ fun ReportPage(
       .fillMaxWidth(),
     horizontalAlignment = Alignment.CenterHorizontally
   ) {
+    // Display date range and total expenses.
     Row(
       horizontalArrangement = Arrangement.SpaceBetween,
       modifier = Modifier.fillMaxWidth()
@@ -79,11 +92,13 @@ fun ReportPage(
       }
     }
 
+    // Display charts based on the recurrence.
     Box(
       modifier = Modifier
         .height(180.dp)
         .padding(vertical = 16.dp)
     ) {
+      // Display the appropriate chart based on the recurrence.
       when (recurrence) {
         Recurrence.Weekly -> WeeklyChart(expenses = uiState.expenses)
         Recurrence.Monthly -> MonthlyChart(
@@ -95,11 +110,12 @@ fun ReportPage(
       }
     }
 
+    // Display the list of expenses.
     ExpensesList(
       expenses = uiState.expenses, modifier = Modifier
         .weight(1f)
         .verticalScroll(
-          rememberScrollState()
+          rememberScrollState() // Remember scroll state to scroll to top when the page changes.
         )
     )
   }

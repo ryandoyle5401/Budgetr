@@ -18,10 +18,17 @@ import com.example.budgetr.ui.theme.LabelSecondary
 import com.example.budgetr.utils.simplifyNumber
 import java.time.DayOfWeek
 
+/**
+ * A composable function to display a weekly bar chart of expenses.
+ *
+ * @param expenses List of expenses to be displayed in the chart.
+ */
 @Composable
 fun WeeklyChart(expenses: List<Expense>) {
+  // Group expenses by day of the week.
   val groupedExpenses = expenses.groupedByDayOfWeek()
 
+  // Create and display a bar chart with the specified data and settings.
   BarChart(
     barChartData = BarChartData(
       bars = listOf(

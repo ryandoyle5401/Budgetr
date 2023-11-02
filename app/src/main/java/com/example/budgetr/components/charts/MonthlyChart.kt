@@ -18,11 +18,21 @@ import com.example.budgetr.utils.simplifyNumber
 import java.time.LocalDate
 import java.time.YearMonth
 
+/**
+ * Composable function for rendering a monthly bar chart of expenses.
+ *
+ * @param expenses The list of expenses to be displayed in the chart.
+ * @param month The LocalDate representing the target month.
+ */
 @Composable
 fun MonthlyChart(expenses: List<Expense>, month: LocalDate) {
+  // Group expenses by day of the month.
   val groupedExpenses = expenses.groupedByDayOfMonth()
+
+  // Calculate the number of days in the given month.
   val numberOfDays = YearMonth.of(month.year, month.month).lengthOfMonth()
 
+  // Create a BarChart to display the expenses.
   BarChart(
     barChartData = BarChartData(
       bars = buildList() {

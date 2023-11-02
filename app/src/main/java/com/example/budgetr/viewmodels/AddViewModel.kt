@@ -14,6 +14,16 @@ import kotlinx.coroutines.launch
 import java.time.LocalDate
 import java.time.LocalDateTime
 
+/**
+ * Data class representing the state of the Add screen, including input fields and category information.
+ *
+ * @param amount The expense amount as a string.
+ * @param recurrence The selected recurrence pattern.
+ * @param date The selected date for the expense.
+ * @param note Additional notes for the expense.
+ * @param category The selected category for the expense.
+ * @param categories A collection of available categories.
+ */
 data class AddScreenState(
   val amount: String = "",
   val recurrence: Recurrence = Recurrence.None,
@@ -23,6 +33,9 @@ data class AddScreenState(
   val categories: RealmResults<Category>? = null
 )
 
+/**
+ * ViewModel for the Add screen, responsible for handling user input and managing the state of the screen.
+ */
 class AddViewModel : ViewModel() {
   private val _uiState = MutableStateFlow(AddScreenState())
   val uiState: StateFlow<AddScreenState> = _uiState.asStateFlow()
@@ -35,6 +48,11 @@ class AddViewModel : ViewModel() {
     }
   }
 
+  /**
+   * Updates the expense amount in the current state.
+   *
+   * @param amount The new expense amount as a string.
+   */
   fun setAmount(amount: String) {
     var parsed = amount.toDoubleOrNull()
 
@@ -51,6 +69,11 @@ class AddViewModel : ViewModel() {
     }
   }
 
+  /**
+   * Updates the selected recurrence pattern in the current state.
+   *
+   * @param recurrence The selected recurrence pattern.
+   */
   fun setRecurrence(recurrence: Recurrence) {
     _uiState.update { currentState ->
       currentState.copy(
@@ -59,6 +82,11 @@ class AddViewModel : ViewModel() {
     }
   }
 
+  /**
+   * Updates the selected date in the current state.
+   *
+   * @param date The selected date for the expense.
+   */
   fun setDate(date: LocalDate) {
     _uiState.update { currentState ->
       currentState.copy(
@@ -67,6 +95,11 @@ class AddViewModel : ViewModel() {
     }
   }
 
+  /**
+   * Updates the expense note in the current state.
+   *
+   * @param note Additional notes for the expense.
+   */
   fun setNote(note: String) {
     _uiState.update { currentState ->
       currentState.copy(
@@ -75,6 +108,11 @@ class AddViewModel : ViewModel() {
     }
   }
 
+  /**
+   * Updates the selected category in the current state.
+   *
+   * @param category The selected category for the expense.
+   */
   fun setCategory(category: Category) {
     _uiState.update { currentState ->
       currentState.copy(
@@ -83,6 +121,9 @@ class AddViewModel : ViewModel() {
     }
   }
 
+  /**
+   * Submits the expense to the database and clears the current state.
+   */
   fun submitExpense() {
     if (_uiState.value.category != null) {
       viewModelScope.launch(Dispatchers.IO) {
