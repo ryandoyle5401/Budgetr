@@ -14,12 +14,22 @@ import kotlinx.coroutines.flow.asStateFlow
 import kotlinx.coroutines.flow.update
 import kotlinx.coroutines.launch
 
+/**
+ * Data class representing the state of the Expenses screen, including selected recurrence, total sum, and the list of expenses.
+ *
+ * @param recurrence The selected recurrence for expense filtering.
+ * @param sumTotal The total sum of expenses within the selected date range.
+ * @param expenses A list of expenses filtered by the selected recurrence and date range.
+ */
 data class ExpensesState(
   val recurrence: Recurrence = Recurrence.Daily,
   val sumTotal: Double = 1250.98,
   val expenses: List<Expense> = listOf()
 )
 
+/**
+ * ViewModel for the Expenses screen, responsible for managing expense-related functionality and the screen state.
+ */
 class ExpensesViewModel: ViewModel() {
   private val _uiState = MutableStateFlow(ExpensesState())
   val uiState: StateFlow<ExpensesState> = _uiState.asStateFlow()
@@ -35,6 +45,11 @@ class ExpensesViewModel: ViewModel() {
     }
   }
 
+  /**
+   * Sets the selected recurrence and updates the list of expenses and total sum accordingly.
+   *
+   * @param recurrence The selected recurrence for expense filtering.
+   */
   fun setRecurrence(recurrence: Recurrence) {
     val (start, end) = calculateDateRange(recurrence, 0)
 

@@ -22,16 +22,25 @@ import com.example.budgetr.ui.theme.TopAppBarBackground
 import io.realm.kotlin.ext.query
 import kotlinx.coroutines.launch
 
+/**
+ * Composable function for the "Settings" page in the Budgetr app.
+ *
+ * @param navController The NavController used for navigation within the app.
+ */
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun Settings(navController: NavController) {
+  // Create a coroutine scope to handle background tasks
   val coroutineScope = rememberCoroutineScope()
+  // State for controlling the delete confirmation dialog
   var deleteConfirmationShowing by remember {
     mutableStateOf(false)
   }
 
+  // Function to erase all data (expenses and categories)
   val eraseAllData: () -> Unit = {
     coroutineScope.launch {
+      // Use Firebase database to query and delete all expenses and categories
       db.write {
         val expenses = this.query<Expense>().find()
         val categories = this.query<Category>().find()
@@ -39,11 +48,13 @@ fun Settings(navController: NavController) {
         delete(expenses)
         delete(categories)
 
+        // Close the delete confirmation dialog
         deleteConfirmationShowing = false
       }
     }
   }
 
+  // Scaffold for the "Settings" page
   Scaffold(
     topBar = {
       MediumTopAppBar(
@@ -62,6 +73,7 @@ fun Settings(navController: NavController) {
             .background(BackgroundElevated)
             .fillMaxWidth()
         ) {
+          // Settings table row for navigating to Categories settings
           TableRow(
             label = "Categories",
             hasArrow = true,
@@ -72,6 +84,7 @@ fun Settings(navController: NavController) {
             modifier = Modifier
               .padding(start = 16.dp), thickness = 1.dp, color = DividerColor
           )
+          // Settings table row for erasing all data, with a destructive action
           TableRow(
             label = "Erase all data",
             isDestructive = true,
@@ -79,17 +92,20 @@ fun Settings(navController: NavController) {
               deleteConfirmationShowing = true
             })
 
+          // Display a delete confirmation dialog if `deleteConfirmationShowing` is true
           if (deleteConfirmationShowing) {
             AlertDialog(
               onDismissRequest = { deleteConfirmationShowing = false },
               title = { Text("Are you sure?") },
               text = { Text("This action cannot be undone.") },
               confirmButton = {
+                // Button to confirm and delete all data
                 TextButton(onClick = eraseAllData) {
                   Text("Delete everything")
                 }
               },
               dismissButton = {
+                // Button to cancel the delete operation
                 TextButton(onClick = { deleteConfirmationShowing = false }) {
                   Text("Cancel")
                 }

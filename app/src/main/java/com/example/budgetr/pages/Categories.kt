@@ -35,6 +35,12 @@ import com.example.budgetr.viewmodels.CategoriesViewModel
 import me.saket.swipe.SwipeAction
 import me.saket.swipe.SwipeableActionsBox
 
+/**
+ * Composable function for the "Categories" page in the Budgetr app.
+ *
+ * @param navController The NavController for navigation.
+ * @param vm The CategoriesViewModel used for managing the state of the "Categories" page.
+ */
 @OptIn(
   ExperimentalMaterial3Api::class, ExperimentalFoundationApi::class,
   ExperimentalAnimationApi::class
@@ -43,10 +49,13 @@ import me.saket.swipe.SwipeableActionsBox
 fun Categories(
   navController: NavController, vm: CategoriesViewModel = viewModel()
 ) {
+  // Collect and observe the UI state
   val uiState by vm.uiState.collectAsState()
 
+  // Color picker controller
   val colorPickerController = rememberColorPickerController()
 
+  // Scaffold for the "Categories" page
   Scaffold(topBar = {
     MediumTopAppBar(title = { Text("Categories") },
       colors = TopAppBarDefaults.mediumTopAppBarColors(
@@ -83,6 +92,7 @@ fun Categories(
             itemsIndexed(
               uiState.categories,
               key = { _, category -> category.name }) { index, category ->
+              // Swipeable action box for deleting categories
               SwipeableActionsBox(
                 endActions = listOf(
                   SwipeAction(
@@ -119,6 +129,7 @@ fun Categories(
                 }
               }
               if (index < uiState.categories.size - 1) {
+                // Divider between categories
                 Row(modifier = Modifier.background(BackgroundElevated).height(1.dp)) {
                   Divider(
                     modifier = Modifier.padding(start = 16.dp),
@@ -131,6 +142,7 @@ fun Categories(
           }
         }
       }
+      // Create new category UI elements
       Row(
         modifier = Modifier
           .padding(horizontal = 16.dp)
@@ -140,6 +152,7 @@ fun Categories(
         horizontalArrangement = Arrangement.SpaceBetween,
       ) {
         if (uiState.colorPickerShowing) {
+          // Dialog for selecting a category color
           Dialog(onDismissRequest = vm::hideColorPicker) {
             Surface(color = BackgroundElevated, shape = Shapes.large) {
               Column(
@@ -161,6 +174,7 @@ fun Categories(
                     controller = colorPickerController
                   )
                 }
+                // Color picker
                 HsvColorPicker(
                   modifier = Modifier
                     .fillMaxWidth()
@@ -183,6 +197,7 @@ fun Categories(
             }
           }
         }
+        // Color selection
         Surface(
           onClick = vm::showColorPicker,
           shape = CircleShape,
@@ -205,6 +220,7 @@ fun Categories(
             verticalArrangement = Arrangement.Center,
             modifier = Modifier.fillMaxHeight()
           ) {
+            // Input field for new category name
             UnstyledTextField(
               value = uiState.newCategoryName,
               onValueChange = vm::setNewCategoryName,
@@ -215,6 +231,7 @@ fun Categories(
             )
           }
         }
+        // Button to create a new category
         IconButton(
           onClick = vm::createNewCategory,
           modifier = Modifier
@@ -230,6 +247,9 @@ fun Categories(
   })
 }
 
+/**
+ * Preview function for the "Categories" page in the Budgetr app.
+ */
 @Preview(uiMode = UI_MODE_NIGHT_YES)
 @Composable
 fun CategoriesPreview() {

@@ -27,11 +27,18 @@ import com.example.budgetr.models.Recurrence
 import com.example.budgetr.ui.theme.*
 import com.example.budgetr.viewmodels.AddViewModel
 
+/**
+ * Composable function for the "Add" page in the Budgetr app, allowing users to input expense details.
+ *
+ * @param navController The NavController for navigating between pages.
+ * @param vm The AddViewModel used for managing the state of the "Add" page.
+ */
 @OptIn(ExperimentalMaterial3Api::class, ExperimentalComposeUiApi::class)
 @Composable
 fun Add(navController: NavController, vm: AddViewModel = viewModel()) {
   val state by vm.uiState.collectAsState()
 
+  // List of available recurrence options
   val recurrences = listOf(
     Recurrence.None,
     Recurrence.Daily,
@@ -40,6 +47,7 @@ fun Add(navController: NavController, vm: AddViewModel = viewModel()) {
     Recurrence.Yearly
   )
 
+  // Scaffold for the "Add" page
   Scaffold(topBar = {
     MediumTopAppBar(
       title = { Text("Add") },
@@ -48,6 +56,7 @@ fun Add(navController: NavController, vm: AddViewModel = viewModel()) {
       )
     )
   }, content = { innerPadding ->
+    // Column for organizing content
     Column(
       modifier = Modifier.padding(innerPadding),
       horizontalAlignment = Alignment.CenterHorizontally
@@ -59,6 +68,7 @@ fun Add(navController: NavController, vm: AddViewModel = viewModel()) {
           .background(BackgroundElevated)
           .fillMaxWidth()
       ) {
+        // Expense detail input fields
         TableRow(label = "Amount", detailContent = {
           UnstyledTextField(
             value = state.amount,
@@ -104,6 +114,7 @@ fun Add(navController: NavController, vm: AddViewModel = viewModel()) {
           thickness = 1.dp,
           color = DividerColor
         )
+        // Date selection
         var datePickerShowing by remember {
           mutableStateOf(false)
         }
@@ -112,6 +123,7 @@ fun Add(navController: NavController, vm: AddViewModel = viewModel()) {
             Text(state.date.toString())
           }
           if (datePickerShowing) {
+            // Date picker dialog
             DatePickerDialog(onDismissRequest = { datePickerShowing = false },
               onDateChange = { it ->
                 vm.setDate(it)
@@ -177,6 +189,7 @@ fun Add(navController: NavController, vm: AddViewModel = viewModel()) {
           }
         })
       }
+      // Submit button
       Button(
         onClick = vm::submitExpense,
         modifier = Modifier.padding(16.dp),
@@ -189,6 +202,9 @@ fun Add(navController: NavController, vm: AddViewModel = viewModel()) {
   })
 }
 
+/**
+ * A preview composable for the "Add" page.
+ */
 @Preview(showBackground = true, uiMode = UI_MODE_NIGHT_YES)
 @Composable
 fun PreviewAdd() {

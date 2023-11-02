@@ -8,8 +8,14 @@ import io.github.serpro69.kfaker.Faker
 import java.time.LocalDateTime
 import java.time.temporal.ChronoUnit
 
+/**
+ * A utility class that generates mock data for testing or development purposes in the Budgetr app.
+ */
 val faker = Faker()
 
+/**
+ * A list of mock categories for expenses, each with a name and a randomly generated color.
+ */
 val mockCategories = listOf(
   Category(
     "Bills",
@@ -42,6 +48,9 @@ val mockCategories = listOf(
   ),
 )
 
+/**
+ * A list of mock expenses, each with random attributes like amount, date, recurrence, note, and category.
+ */
 val mockExpenses: List<Expense> = List(30) {
   Expense(
     amount = faker.random.nextInt(min = 1, max = 999)

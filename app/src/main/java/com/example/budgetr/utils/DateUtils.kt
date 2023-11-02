@@ -6,6 +6,11 @@ import java.time.LocalDateTime
 import java.time.YearMonth
 import java.time.format.DateTimeFormatter
 
+/**
+ * Formats the LocalDate into a user-friendly day representation.
+ *
+ * @return A formatted string representing the date (e.g., "Today," "Yesterday," or "Mon, 01 Jan 2023").
+ */
 fun LocalDate.formatDay(): String {
   val today = LocalDate.now()
   val yesterday = today.minusDays(1)
@@ -18,6 +23,11 @@ fun LocalDate.formatDay(): String {
   }
 }
 
+/**
+ * Formats the LocalDateTime into a user-friendly day representation for date range views.
+ *
+ * @return A formatted string representing the date (e.g., "01 Jan 2023" or "01 Jan").
+ */
 fun LocalDateTime.formatDayForRange(): String {
   val today = LocalDateTime.now()
   val yesterday = today.minusDays(1)
@@ -28,12 +38,22 @@ fun LocalDateTime.formatDayForRange(): String {
   }
 }
 
+/**
+ * Represents data about a date range including the start date, end date, and days in range.
+ */
 data class DateRangeData(
   val start: LocalDate,
   val end: LocalDate,
   val daysInRange: Int
 )
 
+/**
+ * Calculates the date range based on the recurrence and page for date range views.
+ *
+ * @param recurrence The recurrence frequency.
+ * @param page The page number within the date range view.
+ * @return A [DateRangeData] object representing the calculated date range.
+ */
 fun calculateDateRange(recurrence: Recurrence, page: Int): DateRangeData {
   val today = LocalDate.now()
   lateinit var start: LocalDate
