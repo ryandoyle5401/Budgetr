@@ -59,8 +59,9 @@
 2. Gradle commands not recognized
 3. Ran out of time to focus on Home screen
 ### Progress - Josh
-
+1. Learned about GitHub Action
 ### Issues - Josh
+1. Gradle commands does not work
 ### Progress - Robin
 
 ### Issues - Robin
@@ -79,7 +80,7 @@
 2. Figure out why gradle commands aren't working
 3. Find out more about how to test Composable functions
 ### Josh
-
+1. Help with grales commands or anywhere needed
 ### Robin
 
 ### David
