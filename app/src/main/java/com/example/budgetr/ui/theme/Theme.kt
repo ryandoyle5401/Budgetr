@@ -4,6 +4,20 @@ import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.darkColorScheme
 import androidx.compose.runtime.Composable
 
+@Composable
+fun BudgetrTheme(
+  content: @Composable () -> Unit
+) {
+  val colors = DarkColorPalette
+
+  MaterialTheme(
+    colorScheme = colors,
+    typography = Typography,
+    shapes = Shapes,
+    content = content
+  )
+}
+
 private val DarkColorPalette = darkColorScheme(
   primary = Primary,
   background = Surface,
@@ -24,17 +38,3 @@ private val DarkColorPalette = darkColorScheme(
     onSurface = Color.Black,
     */
 )
-
-@Composable
-fun BudgetrTheme(
-  content: @Composable () -> Unit
-) {
-  val colors = DarkColorPalette
-
-  MaterialTheme(
-    colorScheme = colors,
-    typography = Typography,
-    shapes = Shapes,
-    content = content
-  )
-}
