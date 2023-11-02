@@ -1,6 +1,7 @@
 # Team Report
 
 ## Agenda
+Discuss Dokka implementation and issues with testing the database
 ## Group Goals from Previous Week
 1. Learn more about JUnit
 2. Implement JUnit into the project
