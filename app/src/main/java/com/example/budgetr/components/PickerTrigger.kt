@@ -19,6 +19,16 @@ import com.example.budgetr.ui.theme.BudgetrTheme
 import com.example.budgetr.ui.theme.Shapes
 import com.example.budgetr.ui.theme.Typography
 
+/**
+ * A composable function for rendering a picker trigger.
+ *
+ * This composable function creates a trigger for a picker, allowing the user to open a picker dialog.
+ * It displays a label and an icon that can be clicked to open the picker.
+ *
+ * @param label The label text for the picker trigger.
+ * @param onClick The click action to be performed when the trigger is clicked.
+ * @param modifier Additional [Modifier] to be applied to the trigger.
+ */
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun PickerTrigger(
@@ -27,20 +37,20 @@ fun PickerTrigger(
   modifier: Modifier = Modifier,
 ) {
   Surface(
-    shape = Shapes.medium,
-    color = FillTertiary,
+    shape = Shapes.medium, // Set the shape of the trigger.
+    color = FillTertiary, // Set the background color of the trigger.
     modifier = modifier,
-    onClick = onClick,
+    onClick = onClick, // Define the action to perform when the trigger is clicked.
   ) {
     Row(
       modifier = Modifier.padding(horizontal = 20.dp, vertical = 3.dp),
       verticalAlignment = Alignment.CenterVertically,
     ) {
-      Text(label, style = Typography.titleSmall)
+      Text(label, style = Typography.titleSmall) // Display the label text with a specific style.
       Icon(
-        painterResource(R.drawable.ic_unfold_more),
-        contentDescription = "Open picker",
-        modifier = Modifier.padding(start = 10.dp)
+        painterResource(R.drawable.ic_unfold_more), // Set the icon using a drawable resource.
+        contentDescription = "Open picker", // Provide content description for accessibility.
+        modifier = Modifier.padding(start = 10.dp) // Add padding to the icon.
       )
     }
   }
@@ -50,6 +60,6 @@ fun PickerTrigger(
 @Composable
 fun Preview() {
   BudgetrTheme {
-    PickerTrigger("this week", onClick = {})
+    PickerTrigger("this week", onClick = {}) // Preview the PickerTrigger composable with a sample label.
   }
 }
