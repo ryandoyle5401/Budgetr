@@ -72,9 +72,12 @@ Discuss Dokka implementation and issues with testing the database
 ### Issues - David
 
 ### Progress - Mitkumar
+1. Work on changing the frontpage
+2. Fixed up small errors and issues
   
 ### Issues - Mitkumar
-  
+1. Andriodstudio started giving HyperV error for my device emulator
+     
 ## Individual Goals for Next Week
 ### Ryan
 1. Figure out how to implement Dokka
@@ -87,3 +90,4 @@ Discuss Dokka implementation and issues with testing the database
 ### David
    
 ### Mitkumar
+1. Continue improving frontpage
