@@ -69,8 +69,13 @@ Discuss Dokka implementation and issues with testing the database
 ### Issues - Robin
 1. Every time I run the application, my mac makes 10 random folders
 ### Progress - David
+1. Got on same page with team (Woo)
+2. Implemented a database test
+3. Learned github actions
 
 ### Issues - David
+1. Database test does not work as supposed too
+2. Updating dependencies unsynced some stuff but we got it fixed now
 
 ### Progress - Mitkumar
 1. Work on changing the frontpage
@@ -90,6 +95,8 @@ Discuss Dokka implementation and issues with testing the database
 1. Finish up testing firebase
 2. Help front-end guys if needed
 ### David
+1. Make databse testing work
+2. Add more functional database tests
    
 ### Mitkumar
 1. Continue improving frontpage
