@@ -64,9 +64,10 @@ Discuss Dokka implementation and issues with testing the database
 ### Issues - Josh
 1. Gradle commands does not work
 ### Progress - Robin
-
+1. Looked into testing with firebase
+2. Learned javascript to help with front-end
 ### Issues - Robin
-
+1. Every time I run the application, my mac makes 10 random folders
 ### Progress - David
 
 ### Issues - David
@@ -86,7 +87,8 @@ Discuss Dokka implementation and issues with testing the database
 ### Josh
 1. Help with grales commands or anywhere needed
 ### Robin
-
+1. Finish up testing firebase
+2. Help front-end guys if needed
 ### David
    
 ### Mitkumar
