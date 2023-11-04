@@ -7,4 +7,14 @@
     <color name="row_arrow">#FF555556</color>
     <color name="top_app_bar">#0b0b0b</color>
     <color name="red">#FF0000</color>
+
+    <!-- Additional colors -->
+    <color name="secondary">#FF00BCD4</color> <!-- Cyan -->
+    <color name="accent">#FFFFC107</color>    <!-- Amber -->
+    <color name="primary_dark">#FF0057C0</color> <!-- Dark Blue -->
+    <color name="background">#FFFAFAFA</color> <!-- Light Gray background -->
+    <color name="error">#FFF44336</color>      <!-- Red for error messages or indicators -->
+    <color name="success">#FF4CAF50</color>    <!-- Green for success messages or indicators -->
+    <color name="warning">#FFFFEB3B</color>    <!-- Yellow for warning messages or indicators -->
+    <color name="info">#FF2196F3</color>       <!-- Blue for informational messages -->
 </resources>
