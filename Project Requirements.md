@@ -12,7 +12,7 @@
 Repo [link](https://github.com/ryandoyle5401/Budgetr.git)
 
 <strong>Roles:</strong>
-- UI Designer/Frontend - Ryan
+- UI Designer/Frontend - Ryan, Josh
 - Backend - Josh, Mit
 - Database - David, Robin
 
@@ -43,7 +43,7 @@ categories together broken down into fractional pie slices.
 <strong>2 Stretch Features:</strong>
 1. A 'Recent Activity' pane that automatically updates when expenses are added
 1. Notifications of too much spending
-<br>
+
 ## Use Cases
 <strong>Creating an expense category to track</strong>  
 <strong>Actor:</strong> A user wanting to add something to their budget.  
@@ -210,3 +210,221 @@ programming language.
 Once we have our UI design up and running, we can then ask fellow classmates, friends, or family to test out our design
 implementation and give feedback on their preference and criticism. Doing so can give us a better idea of how to properly
 proceed with our application.
+
+<strong>Test Automation</strong>  
+For this project we will be using JUnit 5 as our automated test infrastructure. We chose this test infrastructure because JUnit works well with Kotlin code and Gradle
+has native support for it.  
+
+<strong>Add a New Test</strong>  
+To add a new test:
+- Within the 'test' subpackage, create a new class  
+![Create Test Class](Pictures/create_test_class.png)
+- Name the class something like "className_test"  
+![Name Test Class](Pictures/name_test_class.png)
+- Add necessary imports  
+![Add Imports](Pictures/add_imports.png)
+- Create a function named "funcName_test" with the @Test annotation to test a function from your code
+![Add Test Function](Pictures/create_test_func.png)
+- Add an 'assert' function and give appropriate arguments  
+![Add Assert](Pictures/assert.png)
+
+<strong>Continuous Integraton</strong>
+Our continuous integration service we will be using is GitHub Actions. We followed these steps to setup GitHub Actions:
+1. Within the main branch in the GitHub repo, create the directory .github/workflows and create a .yml file here
+2. In the .yml file, use the keyword 'on' to specify the type of event to trigger the job to run (example: pushing to the repo)
+3. In the 'jobs:' section, include a 'build:' section to specify the build the tests run on (example: 'ubuntu-latest')
+4. The 'steps:' section specifies the steps taken to complete the job (example: 'uses: actions/checout@v2' for checking out the repo)
+5. Add additional steps to perform other tasks (example: we have steps to setup the Java JDK, the Android SDK, etc.)
+
+<strong>Pros and Cons</strong>
+GitHub Actions vs. GitLab vs. Travis
+GtiHub Actions Pros:
+- We are using GitHub to host our code
+- Simpler configuration
+- More templates on the marketplace
+
+GitHub Actions Cons:
+- GitLab is like GitHub and GitHub Actions bundled together
+- Less built-in features compared to GitLab
+
+GitLab Pros:
+- More tools compared to GitHub Actions
+- More for larger projects
+- Includes code hosting, CI/CD, all in one platform
+
+GitLab Cons:
+- We are not using GitLab to host our code
+- Doesn't integrate as easily with GitHub
+- Initial setup/configuration can be more complex
+
+Travis Pros:
+- Integrates well with Docker
+- Supports many programming frameworks
+- Offers more customization and configuration options
+Travis Cons:
+- Non-native to GitHub
+- Different pricing model from GitHub Actions
+- No marketplace
+
+CI Build Test Executions:
+- Unit Tests
+- Intergration Tests
+- Functional Tests
+- End-to-end Tests
+- Performance Tests
+- Security Tests
+- UI/UX Tests
+
+CI Build Triggers:
+- Pushing to the repository
+
+## Software Architecture
+<strong>Major Software Components:</strong>  
+- Kotlin Programming Language
+- Firebase Database
+
+<strong>Interface Between Components:</strong>  
+The interface between Kotlin and the Firebase database will be a Kotlin class. Within this class there will be code that allows our program to both read and write data to the database. With this in place, we should be able to store and retrieve any data the user enters or has entered.  
+
+<strong>Data the System Stores:</strong>  
+This system should store information from the user's profile like their first name, last name, email address, phone number password, and any answers they provide to security questions. Additionally, the system will store their settings like their expense categories, their expenses (in dollar amounts), their set limits (in dollar amounts). Both this data and the user's profile information will all be stored in a database. As part of our design, the database will have a table for storing the user's account information. Then, each account table will be linked to a budget or settings table that stores information about the user's customized budget.  
+<strong>Alternatives:</strong>  
+An alternative to using Kotlin as our primary programming language, we could use Java as an alternative to develop an Android app.  
+Java Pros:  
+- More documentation
+- More examples/programs created that use Java
+- We as a team have more experience using Java
+
+Java Cons:  
+- More cumbersome compared to Kotlin
+- Becoming more of an outdated language
+- Less features compared to Kotlin e.g. type inference
+
+One alternative to the Firebase database would be Microsoft Azure  
+Azure Pros:  
+- More features, like ease in scaling for larger projects
+- More free storage
+- Good analytical tools
+
+Azure Cons:  
+- Unlike Firebase, Azure was not created by Google, so, Azure doesn't integrate with android apps in Android Studio as easily.
+- Access is through a Microsoft account, whereas Firebase uses Google/Gmail account
+- Setup with Azure isn't as simple and easy as it is with Firebase
+
+## Software Design
+<strong>Kotlin:</strong>  
+Kotlin is a cross-platform, high-level programming language that is interoperable with Java. Kotlin compiles to Java bytecode and uses the Java Virtual Machine to run its code. Part of the aspects of Kotlin that make it a worthy programming language are the following: packages (to organize classes), classes (for creating an outline for objects), functions (allow objects to perform tasks), objects and their properties (unique instances of a class with their own unique properties), interfaces (creates a basic outline of functions for classes to implement), enums (for a set of constant variable values), data classes (for data storage and organization), and companion objects (creates static members). Together all of these features of Kotlin combine to make creating an Android application possible.  
+
+<strong>Firebase:</strong>  
+Firebase is a database created by Google, and it is designed to store data primarily for web and mobile applications. Some of the components of Firebase include a FirebaseApp (an application that acts as the entry point for Firebase services), FirebaseOptions (used to configure options such as project ID, API key, and app name), FirebaseAuth (includes services for authenticating sign-up/sign-in), Firebase Realtime Database (includes packages for storing, retrieving, and changing data), Firebase Storage (collection of classes that interact with Firebase Cloud Storage, which can store files and objects), Firebase Cloud Messaging (sends notifications), and Firebase Analytics (provide details about user behavior and app usage). Combined together, all these features used make Firebase ideal for authenticating users, storing, retrieving, and modifying their data, and analyzing their data. When used with Kotlin, the Firebase features combined with Kotlin features are ideal for creating a mobile Android application.  
+
+## Coding Guidelines
+<strong>Kotlin Style Guide:</strong>  
+Link to the official [Kotlin Style Guide](https://developer.android.com/kotlin/style-guide)  
+Link to the official [KDoc documentation](https://kotlinlang.org/docs/kotlin-doc.html)  
+Link to the official [KDoc Dokka tool documentation](https://kotlinlang.org/docs/dokka-introduction.html)  
+
+<strong>Why we chose this style and documentation:</strong>  
+We chose this style and documentation because it's the style and documentation on the Android Developer and Kotlin website, so we figured it would be best to use what is recommeneded by those who develop Android apps and those who wrote the programming language.  
+
+<strong>How we plan to enforce this:</strong>  
+We plan on enforcing this by having the guides linked within the GitHub repo, and all members will need to look over the guides. This way, if any member ever has a question about how to format something, they can easily refer to the guides to try and find an answer.  
+
+### Risk Assessment  
+Risks:
+1. Communication with database
+2. Communication between frontend and backend
+3. Saving/Accessing different user's settings and info
+4. Displaying data graphically and accurately
+5. Database Design/Implementaion
+
+#### Communication with Database:
+<strong>Likelihood of occurring:</strong>  
+medium  
+<strong>Impact if it occurs:</strong>  
+high  
+<strong>Evidence:</strong>  
+We believe the likelihood of this occurring is medium because we’ve never used Firebase with Android Studio, and the impact would be high because if we can’t store/retrieve data, we can’t have a functioning app.  
+<strong>Steps to reduce likelihood/impact and improve estimates:</strong>  
+We plan on reducing the likelihood of something like this from happening by utilizing resources on the Firebase website, Android Studio website, and any other sites with information on setting up communication between Firebase and Android Studio. To improve our estimates of the likelihood and the impact, we believe reviewing the resources to get the program and the database to communicate will increase our knowledge and experience with Firebase and Android Studio.  
+<strong>Plan for detecting problem:</strong>  
+To detect the problem, we can create simple tests. For example, we can create test data in the program, send it to the database, and then check the database to see if the data was successfully sent. Then we can add test data to the database and pull that from the database into the project and see if we get the test data.  
+<strong>Mitigation Plan:</strong>  
+If this issue arises and can’t be resolved in a timely manner, we may have to store data within the app itself.  
+
+#### Communication between Frontend/Backend:
+<strong>Likelihood of occurring:</strong>  
+low  
+<strong>Impact if it occurs:</strong>  
+high  
+<strong>Evidence:</strong>  
+In terms of the likelihood of this occurring, we believe this would be ranked as low. We say this because all frontend components should have corresponding backend code that triggers when the action listener detects an action. Regarding the impact on the app if this issue were to occur, it would be detrimental because any interactions the user has with the frontend wouldn’t be communicated to the backend, meaning the user's input doesn't produce output.    
+<strong>Steps to reduce likelihood/impact and improve estimates:</strong>  
+To reduce the likelihood of this issue, we will make sure that all components the user interacts with, like textboxes and buttons, will have action listeners attached to them that run the appropriate code when it detects an action. In order to improve our estimates, we will test out all frontend components with some dummy backend code to make sure the frontend component calls the dummy backend code when activated.    
+<strong>Plan for detecting problem:</strong>  
+Simply running the app, interacting with the app, and analyzing the output should be sufficient enough to determine if the frontend is successfully communicating with the backend of the app.  
+<strong>Mitigation Plan:</strong>  
+To help mitigate this, we plan on implementing backend code that will execute for all frontend components. We will test this out to make sure that the code that’s supposed to run runs to ensure the frontend is communicating with the backend.  
+
+#### Saving/Accessing different user's settings and info:
+<strong>Likelihood of occurring:</strong>  
+low  
+<strong>Impact if it occurs:</strong>  
+high  
+<strong>Evidence:</strong>  
+We believe the likelihood of this happening is ranked as medium because we haven’t written and tested code to save/access the correct data in the correct table. In the chance of this occurring, the impact on the functionality of the app would be high because if we can’t store the user’s data or properly retrieve their data, there would be no point for the user to user the app.     
+<strong>Steps to reduce likelihood/impact and improve estimates:</strong>  
+To help reduce the likelihood of such an error, we will review Firebase documentation and tutorials, so we know how to facilitate communication between Firebase and Android Studio. As we become more experienced with using Firebase, we believe our estimates will become more accurate.       
+<strong>Plan for detecting problem:</strong>  
+As a way to detect the problem, we will run tests, such as creating two different users with different settings. Then we will sign out of one account, sign back in to the other, and see if the data linked to this user account is retrieved. If there is no data, or the data is different compared to the data we entered, then we will know there is some kind of issue.  
+<strong>Mitigation Plan:</strong>  
+Mitigation can be achieved through altering either our methods of sending/storing data in the database or retrieving/displaying the data sent from the database. We should continue to tweak the methods until we can consistently send information to the database, have the database save it, and then pull the information down from the appropriate table(s) within the database and display it in the app.  
+
+#### Displaying data graphically and accurately:
+<strong>Likelihood of occurring:</strong>  
+medium  
+<strong>Impact if it occurs:</strong>  
+high  
+<strong>Evidence:</strong>  
+We assert that this is a medium because it can be difficult to accurately display graphical data. If the data is inaccurately displayed, it can be difficult for consumers to keep track of their expenses. For the overall impact, we rank this as medium because graphics depicting the user's spending isn't as important as the user being able to keep create their own custom budget and have the app track everything for them.  
+<strong>Steps to reduce likelihood/impact and improve estimates:</strong>  
+Reducing the likelihood of this occurring can be reached through finding good resources that lay out how to insert such graphics into a Kotlin application. As a way of improving our estimates, we can try out what we find with the resources we find. If what we find proves useful, we can get a better idea of whether or not we can implement charts within our own application.  
+<strong>Plan for detecting problem:</strong>  
+To detect such a problem, we can simply create test data and see if it displays and displays accurately. If we can't get data to display or display it accurately, we know we'll have to go back and tweak the code.  
+<strong>Mitigation Plan:</strong>  
+Should an issue like this occur, we can mitigate it by implementing some sort of substitution. For example, instead of displaying a graphic that shows how much the user has spent across all of their expense categories, we could display a scrollable list with the names of all expense categories and their corresponding value listed out side-by-side.  
+
+#### Database Design/Implementation:
+<strong>Likelihood of occurring:</strong>  
+medium    
+<strong>Impact if it occurs:</strong>  
+medium   
+<strong>Evidence:</strong>  
+In terms of this issue occurring, we believe this is ranked as medium. This is because none of us have much experience actually designing and implementing a database. Also, we believe the impact of this would be ranked as medium because if one database design/implementation doesn't work out, we can always re-design and re-implement it.    
+<strong>Steps to reduce likelihood/impact and improve estimates:</strong>  
+As a way to reduce the issue's likelihood, we will discuss how the database should be designed based on what we know. Then, we will ask clarifying questions about the database's design. To improve our estimates, we will try to make the design as simple as possible while still fulfilling all the tasks we need it to do. From there we will attempt to implement the database and test it to see if there needs to be any adjustments.  
+<strong>Plan for detecting problem:</strong>  
+To detect the problem, should it occur, we will review our database design and ask any questions any of us have about it. Then, we will attempt to create the database according to the design. Afterwards, we will use test data to see if the database is functions as we had planned.    
+<strong>Mitigation Plan:</strong>  
+If an error like this occurs, we will work on re-designing and re-implementing the database.  
+
+### Project Schedule  
+<strong>Major Milestones</strong>  
+Screen Design - design what each screen should look like by end of Sept.  
+Functionality Design - design what should happen when a button is pressed by end of Sept.  
+Firebase Project - learn about and create a Firebase project by end of Sept.  
+Screen Implementation - work on implementation by mid-Oct.  
+Functionality Implementation - implement the design by mid-Oct.  
+Firebase Design - design the database for the Firebase project by mid-Oct. 
+Screen Test - test the screen layouts and the functions of their buttons by end of Oct.  
+Firebase Implementation - implement the design by end of Oct.  
+Data Storage/Retrieval - test out sending and receiving data to/from the database by early Nov.    
+Graphics - work on getting graphics to display by early to mid-Nov.  
+
+<strong>Dependencies</strong>  
+In order to test out the buttons on the different screens, the screens have to be designed and implemented as well as the logic behind the buttons has to be designed and implemented before we can successfully test everything out.  
+
+For testing data storage and retrieval, the screens have to be laid out, the buttons need to make calls to the database, and the database needs to be designed and implemented.  
+
+### Documentation Plan  
+Our plan for documentation is to create a user guide as a markdown file. We plan on making the document simple and easy to follow, and we will also include example data and criteria to make it easier for the user to understand how to use the app to its full potential.  
