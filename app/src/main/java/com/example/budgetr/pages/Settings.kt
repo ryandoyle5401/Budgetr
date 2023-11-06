@@ -64,7 +64,7 @@ fun Settings(navController: NavController) {
             .fillMaxWidth()
         ) {
           TableRow(
-            label = "Categories",
+            label = "Categories", labelColor = Color.White,
             hasArrow = true,
             modifier = Modifier.clickable {
               navController.navigate("settings/categories")
@@ -74,7 +74,7 @@ fun Settings(navController: NavController) {
               .padding(start = 16.dp), thickness = 1.dp, color = DividerColor
           )
           TableRow(
-            label = "Erase all data",
+            label = "Erase all data", labelColor = Color.Red,
             isDestructive = true,
             modifier = Modifier.clickable {
               deleteConfirmationShowing = true
@@ -84,10 +84,10 @@ fun Settings(navController: NavController) {
             AlertDialog(
               onDismissRequest = { deleteConfirmationShowing = false },
               title = { Text("Are you sure?") },
-              text = { Text("This action cannot be undone.") },
+              text = { Text("This action cannot be undone.", color = Color.DarkGray) },
               confirmButton = {
                 TextButton(onClick = eraseAllData) {
-                  Text("Delete everything")
+                  Text("Delete everything", color = Color.Red)
                 }
               },
               dismissButton = {

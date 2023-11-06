@@ -29,7 +29,7 @@ fun Reports(vm: ReportsViewModel = viewModel()) {
   Scaffold(
     topBar = {
       MediumTopAppBar(
-        title = { Text("Reports", color = Color.White) },
+        title = { Text("Expense Reports", color = Color.White) },
         colors = TopAppBarDefaults.mediumTopAppBarColors(
           containerColor = TopAppBarBackground
         ),

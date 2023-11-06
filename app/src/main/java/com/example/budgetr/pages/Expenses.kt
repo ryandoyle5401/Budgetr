@@ -45,7 +45,7 @@ fun Expenses(
   Scaffold(
     topBar = {
       MediumTopAppBar(
-        title = { Text("Expenses", color = Color.White) },
+        title = { Text("List Of Expenses", color = Color.White) },
         colors = TopAppBarDefaults.mediumTopAppBarColors(
           containerColor = TopAppBarBackground
         )

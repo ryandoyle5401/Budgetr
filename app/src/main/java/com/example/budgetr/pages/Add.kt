@@ -129,7 +129,7 @@ fun Add(navController: NavController, vm: AddViewModel = viewModel()) {
         TableRow(label = "Note", labelColor = Color.White, detailContent = {
           UnstyledTextField(
             value = state.note,
-            placeholder = { Text("Leave some notes") },
+            placeholder = { Text("Leave some notes", color = Color.DarkGray) },
             arrangement = Arrangement.End,
             onValueChange = vm::setNote,
             modifier = Modifier.fillMaxWidth(),
@@ -183,7 +183,7 @@ fun Add(navController: NavController, vm: AddViewModel = viewModel()) {
         shape = Shapes.large,
         enabled = state.category != null
       ) {
-        Text("Submit Expense")
+        Text("Submit Expense", color = Color.Black)
       }
     }
   })
