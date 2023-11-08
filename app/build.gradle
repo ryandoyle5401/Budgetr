@@ -7,8 +7,8 @@ buildscript {
 plugins {
     id 'com.android.application'
     id 'org.jetbrains.kotlin.android'
-    id "io.sentry.android.gradle" version "3.4.2"
-    id 'io.realm.kotlin'
+    id 'kotlin-kapt'
+    id("com.google.gms.google-services")
 }
 
 android {
@@ -80,6 +80,16 @@ dependencies {
     implementation 'io.sentry:sentry-android:6.13.1'
     implementation 'io.sentry:sentry-compose-android:6.13.1'
     implementation 'androidx.navigation:navigation-runtime-ktx:2.7.4'
+    implementation 'com.google.firebase:firebase-auth:22.2.0'
+    implementation(platform("com.google.firebase:firebase-bom:32.5.0"))
+    implementation("com.google.firebase:firebase-analytics")
+    implementation 'com.google.android.gms:play-services-auth:20.7.0'
+    implementation 'com.google.firebase:firebase-auth-ktx:21.1.0'
+    implementation "androidx.lifecycle:lifecycle-runtime-compose:2.6.0"
+    implementation "io.coil-kt:coil-compose:2.2.2"
+    implementation "androidx.lifecycle:lifecycle-runtime-compose:2.5.1"
+
+
 
     testImplementation 'org.junit.jupiter:junit-jupiter-api:5.10.0'
     testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.10.0'
