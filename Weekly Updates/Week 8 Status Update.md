@@ -56,9 +56,10 @@ Discuss about authentication and Recommendation screen
 ### Issues - Josh
 
 ### Progress - Robin
-
+1. Changed the database from realm to firebase
+2. Implemented Authentication (login)
 ### Issues - Robin
-
+1. After adding the authentication, the code functionality broke, have to fix it.
 ### Progress - David
 
 ### Issues - David
@@ -77,7 +78,8 @@ Discuss about authentication and Recommendation screen
 ### Josh
 
 ### Robin
-
+1. Help redesign the UI
+2. Fix the functionality error that came after adding login
 ### David
  
 ### Mitkumar
