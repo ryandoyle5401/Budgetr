@@ -1,6 +1,7 @@
 # Team Report
 
 ## Agenda
+Discuss about authentication and Recommendation screen
 ## Group Goals from Previous Week
 1. Add more documentation
 2. Work on database and testing it
@@ -10,11 +11,19 @@
 
 ## Group Progress & Issues
 ### Progress
-
+1. Worked on cleaning up/changing frontend
+2. Got Dokka implemented
+3. Gradle commands work
+4. Generated KDocs for documented code
+5. Improved communication
+6. Rebased doc-edit onto main
 ### Issues
-
+1. Some issues with authentication implementation
+2. Some members may have to upgrade to a newer version of Java
 ## Group Goals for Next Week
-
+1. Resolve issues with authentication
+2. Work on alpha release
+3. Work on Recommendations
 # Member Contributions
 
 ## Individual Goals from Previous Week
@@ -35,9 +44,13 @@
 
 ## Individual Progress & Issues
 ### Progress - Ryan
-
+1. Got Dokka plugin to work
+2. Figured out how to get gradle commands to work
+3. Generated HTML pages of documented code
+4. Rebased doc-edit commits onto main
 ### Issues - Ryan
-
+1. Initially, dokka gradle command wouldn't work due to needing Java 17 while I had Java 14 (have since upgraded to Java 21)
+2. During rebase, there were a couple merge conflicts
 ### Progress - Josh
 
 ### Issues - Josh
@@ -58,7 +71,9 @@
 
 ## Individual Goals for Next Week
 ### Ryan
-
+1. Work on cleaning up code/repo
+2. Work on the Recommendations screen
+3. Work on any rewrites the Project Requirements and ReadMe may need
 ### Josh
 
 ### Robin
