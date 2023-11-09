@@ -61,8 +61,10 @@ Discuss about authentication and Recommendation screen
 ### Issues - Robin
 1. After adding the authentication, the code functionality broke, have to fix it.
 ### Progress - David
+1. N/A
 
 ### Issues - David
+1. Was away travelling and did not do any work on project this week besides providing input/suggestions about UI and database.
 
 ### Progress - Mitkumar
 1. I improved the frontend of the app and got it to how everyone wants its
@@ -82,6 +84,9 @@ Discuss about authentication and Recommendation screen
 1. Help redesign the UI
 2. Fix the functionality error that came after adding login
 ### David
+1. Fix login authentification
+2. Work on alpha presentation
+3. Better testing for database
  
 ### Mitkumar
 1. For next week i am planning on working on the frontend of the Sign in page
