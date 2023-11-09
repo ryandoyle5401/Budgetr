@@ -51,9 +51,11 @@
 ### Issues - David
 
 ### Progress - Mitkumar
- 
+1. I improved the frontend of the app and got it to how everyone wants its
+
 ### Issues - Mitkumar
-     
+1. I didn't encounter any issues this week. It was a simple week. was just trying to do the front end as much as possible. 
+
 ## Individual Goals for Next Week
 ### Ryan
 
@@ -64,4 +66,7 @@
 ### David
  
 ### Mitkumar
+1. For next week i am planning on working on the frontend of the Sign in page
+2. Assist with alpha
+3. Work with the team for any other assistance. 
 
