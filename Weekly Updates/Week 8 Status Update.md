@@ -52,9 +52,9 @@ Discuss about authentication and Recommendation screen
 1. Initially, dokka gradle command wouldn't work due to needing Java 17 while I had Java 14 (have since upgraded to Java 21)
 2. During rebase, there were a couple merge conflicts
 ### Progress - Josh
-
+1. To be honest did not get to do much like i would, but floated around if anyone needed help and gave suggestions
 ### Issues - Josh
-
+1. No issuses for me 
 ### Progress - Robin
 1. Changed the database from realm to firebase
 2. Implemented Authentication (login)
@@ -76,7 +76,8 @@ Discuss about authentication and Recommendation screen
 2. Work on the Recommendations screen
 3. Work on any rewrites the Project Requirements and ReadMe may need
 ### Josh
-
+1. Help work on UI
+2. Help fix any bugs
 ### Robin
 1. Help redesign the UI
 2. Fix the functionality error that came after adding login
