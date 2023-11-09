@@ -1,186 +1,183 @@
 # <p style="text-align: center;">Requirements</p>
 
 ## Team Info & Policies
-<strong>Team Members:</strong>
+**Team Members:**
 1. Ryan Doyle
 1. Josh Delva
 1. David Weisman
 1. Jahidul Robin
 1. Mit Patel
 
-<strong>GitHub:</strong>
+**GitHub:**
 Repo [link](https://github.com/ryandoyle5401/Budgetr.git)
 
-<strong>Roles:</strong>
+**Roles:**
 - UI Designer/Frontend - Ryan, Josh
 - Backend - Josh, Mit
 - Database - David, Robin
 
-<strong>Communication:</strong>
-We will implement multiple resources for communication, including a group chat, Discord calls,
-and in-person meetings. The group chat is the quickest and most convenient way for members to
-instantly communicate with everyone in the group. With Discord, we can benefit from remote
-communication, including both voice calls and screen sharing. In-person meetings will be used
-whenever possible to discuss any updates, issues, or ideas regarding the project. As a team,
-we aim to stay in frequent contact, ideally every day or every other day.  
+**Communication:**
+We will establish a diverse array of communication channels to facilitate seamless interaction among team members. These resources include a group chat, Discord calls, and in-person meetings. As a cohesive team, our objective is to uphold regular communication, striving for daily or, at the very least, bi-daily engagement to ensure a dynamic and well-connected working environment. 
 <br>
 ## Product Description
-Budgetr is a financial management application that will allow users to create and customize
-their own budget, monitor their expenses among user-created categories such as “Entertainment” 
-or “Food,” and organize their overall financial portfolio. The application will have an intuitive 
-graphical user interface to allow for easy navigation throughout the app. Additionally, the app
-will allow users to easily create and customize a budget to their liking by creating or deleting
-categories for expenses and setting limits on said categories. Moreover, users can get a much better
-understanding of their spending habits by viewing the built-in Pie Chart that shows all expense 
-categories together broken down into fractional pie slices.
+Budgetr stands as an innovative financial management application empowering users to create a personalized budget. This comprehensive tool not only streamlines budget creation and customization but also offers a seamless interface, ensuring effortless navigation. Users gain the flexibility to fashion budgets according to their preferences, effortlessly adding or removing expense categories and establishing limits within those categories. Furthermore, a built-in diagram provides users with a visually insightful overview of their spending patterns for all categories. With Budgetr, financial organization and clarity become intuitive and personalized.
 
-<strong>4 Major Features:</strong>
+**4 Major Features:**
 1. Customizable Budget Plan
 1. GUI
 1. Personal Account Creation
 1. Spending Recommendations
 
-<strong>2 Stretch Features:</strong>
+**2 Stretch Features:**
 1. A 'Recent Activity' pane that automatically updates when expenses are added
 1. Notifications of too much spending
 
 ## Use Cases
-<strong>Creating an expense category to track</strong>  
-<strong>Actor:</strong> A user wanting to add something to their budget.  
-<strong>Trigger:</strong> A user wants to expand their expense portfolio for more accurate financial
-tracking.  
-<strong>Precondition:</strong> The user spends money on something and needs to categorize it in their
-budget.  
-<strong>Postcondition:</strong> Adding the expense to the budget/expense portfolio for tracking.  
-<strong>List of steps:</strong> 
-1. Press a button to create a new expense,
-1. give the category a name e.g., “Food,”
-1. user enters how much they have spent so far,
-1. enter the maximum amount they want to spend for this category,
-1. press a button to add the category to the budget. 
- 
-<strong>Extension:</strong>
-1. If the user decides not to add the category, they can delete it before
-adding the category to their budget.  
- 
-<strong>Exceptions:</strong> 
-1. When entering the amount of money they have spent, the user may enter 
-something non-numeric.  
+**Use Case: Expense Category Creation for Financial Tracking**
 
-<strong>Account creation</strong>  
-<strong>Actor:</strong> New user to the app.  
-<strong>Triggers:</strong> A user wishes to start using Budgetr to manage their finances.  
-<strong>Preconditions:</strong> The user has downloaded the Budgetr app and has a valid email address
-or phone number they wish to use for registration.  
-<strong>Postconditions:</strong> The user has successfully created an account with Budgetr, and the user
-is automatically logged into their new account and is directed to an introductory or dashboard page.  
-<strong>List of steps:</strong> 
-1. User clicks on the “Register” or “Sign Up” button.
-1. User is then prompted to provide essential details such as name, email or phone number, password.
-1. Afterwards, the user sets up security questions or provides additional details if needed.
-1. Then the user agrees to the terms of service and privacy policy.
-1. Finally, user clicks the final “Create Account” button and a welcome message or introductory guide
-appears to help them navigate the initial setup.  
+**Actor:** A user seeking to enhance their budget with additional expense categories.
 
-<strong>Extensions:</strong> 
-1. User can choose to link a social media or Google account for quicker sign-up.  
-1. Then the user can choose to implement two-factor authentication.  
-1. Lastly, they can choose a quick tour of the app is made after account creation.  
+**Trigger:** The user aims to broaden their expense portfolio to achieve more precise financial tracking.
 
-<strong>Exceptions:</strong> 
-1. The provided email address or phone number is already in use.  
-1. Password does not meet the specified criteria.  
-1. An interruption occurs during account creation due to server or computer issues.
-1. User does not agree to the terms of service or privacy policy.
+**Precondition:** The user has incurred an expense that requires categorization within their budget.
 
-<strong>Viewing Chart/Diagram:</strong>  
-<strong>Actor:</strong> User  
-<strong>Triggers:</strong> The user wants to see a visualization of all their expenses.    
-<strong>Preconditions:</strong> The user has accurately entered all expenses but hasn’t seen how 
-all the expenses combine together.  
-<strong>Postconditions:</strong> The user gets a visualization of what percentage of their money went
-toward each and every category they created.   
-<strong>List of steps:</strong>
-1. User clicks on the button to view a chart/diagram.
-1. Then the user selects which type of diagram they want to use.
+**Postcondition:** Successful addition of the expense to the budget/expense portfolio for ongoing tracking.
 
-<strong>Extensions:</strong> 
-1. If the user wants to switch to another diagram, they can select another diagram to view.
+**Steps:**
+1. Initiate the creation of a new expense category by selecting the relevant button.
+2. Provide a name for the category (e.g., "Food").
+3. Enter the total amount spent on the category.
+4. Specify the maximum amount intended for expenditure within this category.
+5. Confirm the addition of the category to the budget by pressing the relevant button.
 
-<strong>Exceptions:</strong> 
-1. The user may not have entered any expenses, so the diagrams won't be able to display what the user
-has spent on.
+**Extension:**
+- If the user decides against adding the category, they have the option to delete it before finalizing its inclusion in the budget.
 
+**Exceptions:**
+- In the process of entering the amount spent, the system anticipates non-numeric inputs from the user and manages such occurrences gracefully.  
 
-<strong>Querying the Database:</strong>  
-<strong>Actor:</strong> Budgetr application  
-<strong>Triggers:</strong> When the user creates an account or logs in, that information will be stored and
-retrieved from a database.  
-<strong>Preconditions:</strong> User is in the process of setting up their account or they are typing in their
-credentials to their account.  
-<strong>Postconditions:</strong> The database either stores the information the user entered during the account
-creation process, or the information is retrieved from the database.  
-<strong>List of steps:</strong> 
-1. The user either enters information to create an account, or they enter their login info.  
-1. When the user presses the "Finish Creating Account" or "Login" button, this will query the database.  
-1. The database will either store the new information, or it will retrieve all information from the user who just
-logged in. 
- 
-<strong>Extensions:</strong> 
-1. When creating an account, the database will check if an account with that information already exists.
+<br>
+  
+**Use Case: Account Creation**
 
-<strong>Exceptions:</strong>
-1. The connection between the application and the database can be interrupted, causing data storage or retrieval
-to fail.
+**Actor:** A new user joining the Budgetr app.
 
+**Triggers:** The user expresses the intention to commence financial management using Budgetr.
 
-<strong>Spending Notifications:</strong>
-<strong>Actor:</strong> Budgetr application  
-<strong>Triggers:</strong>   When the app detects the user entering an amount of money spent on an expense category
-is at or above the threshold set by the user.  
-<strong>Preconditions:</strong> A user has not spent all or more money from the allotted amount they set aside for
-a specific category of expenses.   
-<strong>Postconditions:</strong> A user reaches or exceeds their limit set aside for a specific category of expenses.  
-<strong>List of steps:</strong> 
-1. User enters a value of money spent that reaches or exceeds their limit in their budget.
-1. Code triggers application to send a notification to the user.  
-<strong>Extensions:</strong>
-1. Every time a user updates how much money they have spent on something, the program will check the total value
-   against their set limit.  
-<strong>Exceptions:</strong>
-1. User may enter an erroneous amount leading to a false notification.  
+**Preconditions:** The user has successfully downloaded the Budgetr app and possesses a valid email address or phone number for registration.
+
+**Postconditions:** The user accomplishes the creation of a Budgetr account, seamlessly logging in and transitioning to an introductory or dashboard page.
+
+**Steps:**
+1. Initiate the account creation process by clicking on the "Register" or "Sign Up" button.
+2. Provide essential details such as name, email or phone number, and password.
+3. Optionally set up security questions or furnish additional details as required.
+4. Agree to the terms of service and privacy policy.
+5. Click the final "Create Account" button, triggering a welcome message or introductory guide to assist with initial setup.
+
+**Extensions:**
+- Opt for a quicker sign-up by linking a social media or Google account.
+- Implement two-factor authentication for enhanced security.
+- Choose to take a quick tour of the app following account creation.
+
+**Exceptions:**
+1. If the provided email address or phone number is already in use, the system provides appropriate feedback.
+2. Ensure the password meets the specified criteria; otherwise, guide the user to adhere to the requirements.
+3. Address interruptions during account creation caused by server or computer issues by providing informative error messages and potential troubleshooting steps.
+4. If the user declines to agree to the terms of service or privacy policy, prevent the account creation process and provide information on the necessity of agreement for app usage.  
+
+<br>
+
+**Use Case: Viewing Chart/Diagram**
+
+**Actor:** User
+
+**Triggers:** The user seeks a visual representation of their expenses.
+
+**Preconditions:** The user has diligently inputted all expenses but desires a comprehensive visualization of their combined expenditure.
+
+**Postconditions:** The user gains insight into the distribution of their funds across each created category through a visual representation.
+
+**Steps:**
+1. Initiate the process by clicking on the button designated for viewing charts/diagrams.
+2. Select the preferred type of diagram for visualizing expense distribution.
+
+**Extensions:**
+- Opt to switch to an alternative diagram by selecting another option for viewing.
+
+**Exceptions:**
+1. If the user has not entered any expenses, the diagrams will be unable to display expenditure details as there is no data to visualize. In such cases, prompt the user to input expenses before attempting to view charts/diagrams.  
+
+<br>
+
+**Use Case: Database Interaction**
+
+**Actor:** Budgetr application
+
+**Triggers:** Database interaction occurs when a user creates an account or logs in, leading to the storage and retrieval of relevant information.
+
+**Preconditions:** The user is either setting up their account by entering information or inputting login credentials.
+
+**Postconditions:** The database undergoes either storage of the user-entered information during the account creation process or retrieval of information for the user who has just logged in.
+
+**Steps:**
+1. The user inputs information for account creation or enters login credentials.
+2. Upon pressing the "Finish Creating Account" or "Login" button, a database query is initiated.
+3. The database, in response, either stores the new information or retrieves all relevant information for the logged-in user.
+
+**Extensions:**
+1. During account creation, the database performs a check to verify whether an account with the provided information already exists.
+
+**Exceptions:**
+1. An interruption in the connection between the application and the database may occur, resulting in a failure of data storage or retrieval. In such instances, the system should handle the error gracefully, notifying the user and providing guidance on potential resolutions.  
+
+<br>
+
+**Use Case: Spending Notifications**
+
+**Actor:** Budgetr application
+
+**Triggers:** The application initiates spending notifications when the user's entered amount for an expense category reaches or surpasses the user-defined threshold.
+
+**Preconditions:** The user's current expenditure in a specific expense category has not equaled or exceeded the allocated budget amount.
+
+**Postconditions:** The user attains or surpasses the predefined spending limit for a particular expense category.
+
+**Steps:**
+1. The user inputs an expenditure value that equals or surpasses the budget limit for a specific category.
+2. The code triggers the application to dispatch a notification to the user.
+
+**Extensions:**
+1. Every time the user updates their expense record, the program performs a check against the preset limit, ensuring continuous monitoring of spending.
+
+**Exceptions:**
+1. In the event of a user inputting an erroneous amount, leading to an inaccurate representation of spending, the application must handle this situation with care, potentially providing a corrective mechanism or guidance to rectify the error.
 
 
 ## Non-functional Requirements
-<strong>Security & Privacy:</strong> User data, especially financial, should be encrypted and securely
+**Security & Privacy:** User data, especially financial, should be encrypted and securely
 stored. Ensure GDPR or other relevant privacy regulations are adhered to.
 
 ## External Requirements
-<strong>Cloud Hosting:</strong> Cloud hosting can be used for storing all relevant data.
-<strong>Payment Gateway:</strong> Payment gateway can be introduced if premium features or in-app purchases
+**Cloud Hosting:** Cloud hosting can be used for storing all relevant data.
+**Payment Gateway:** Payment gateway can be introduced if premium features or in-app purchases
 are added to the application.
 
 
 ## Team Process Description:
-<strong>Software toolset:</strong> Kotlin, Android Studio IDE, Git/GitHub. We picked to use Kotlin as the
+**Software toolset:** Kotlin, Android Studio IDE, Git/GitHub. We picked to use Kotlin as the
 programming language because we want to make a mobile application, and Kotlin is primarily used with Android
 Studio to develop mobile apps for Android devices. For the IDE, we chose Android Studio because it supports
 Kotlin and has many built-in features to assist in making an Android application. To assist with code
 development, we will be using functions of Git to make development with team members more organized, and
 we will use GitHub to remotely store our code, making access to source code easier.
 
-<strong>Define and justify each team member’s role:</strong>
-- UI Designer/Frontend: This role is important because the application will be a mobile app with a graphical
-user interface, so, the user interface should be designed to be intuitive and effective. Ryan is suited for 
-the role because he has worked on projects with GUIs in the past.
-- Backend: Backend is vital for this project because the frontend is only one-half of the whole application. 
-The backend will make sure all the processes the buttons on the frontend work as intended. Josh and Mit are good 
-for this role because they are interested in researching and creating a functional backend.
-- Database: With users being able to create their own accounts, it is critical to store the associated information
-with the account in a database. David and Robin are best suited for this role because they have had the most experience
-with working with a database.  
+**Define and justify each team member’s role:**
+- UI Designer/Frontend: Essential for crafting an intuitive and effective mobile app interface, Ryan's past experience with GUI projects makes him well-suited for this role.
+- Backend:  Crucial for the project's completeness, the backend ensures seamless functionality for frontend features. Josh and Mit, with a keen interest in backend development, are well-matched for this role.
+- Database: Essential for storing user account information, David and Robin, with extensive database experience, are ideal for this role.
 
-<strong>Provide a schedule for each member/subgroup:</strong>
+**Provide a schedule for each member/subgroup:**
 - UI Designer/Frontend:
 1. Design frontend with all buttons, labels, textboxes, etc. by Sept. 18th
 1. Implement all buttons, labels, textboxes, etc. as code by early to mid-October
@@ -199,23 +196,17 @@ with working with a database.
 1. Work on successfully retrieving the information and sending it to the application by early November
 1. Work on allowing multiple accounts to be created by end of November
 
-<strong>Major Risks:</strong>
-The three major risks would be graph implementation, user friendly interface, and using a new programing language. 
-Implementing a graph can be difficult, especially to get it accurately lined up with the expense tracking database. 
-Additionally, creating a user-friendly app for mobile devices could be tricky with getting all the proper components into
-place. Lastly, using a new programming language might cause some confusion in the process, as no one is familiar with this
-programming language.
+**Major Risks:**
+The primary risks involve graph implementation, mobile-friendly interface design, and adopting a new programming language. Accurately aligning the graph with the expense tracking database poses a challenge. Crafting a user-friendly mobile app may be complex due to component integration. Adopting an unfamiliar programming language could lead to confusion as no team member is acquainted with it.
 
-<strong>Describe at what point external feedback would be most useful and how to get that feedback:</strong>
-Once we have our UI design up and running, we can then ask fellow classmates, friends, or family to test out our design
-implementation and give feedback on their preference and criticism. Doing so can give us a better idea of how to properly
-proceed with our application.
+**Describe at what point external feedback would be most useful and how to get that feedback:**
+After implementing our UI design, we'll seek feedback from classmates, friends, or family to gather preferences and critiques. This input will guide our next steps in refining the application.
 
-<strong>Test Automation</strong>  
+**Test Automation**
 For this project we will be using JUnit 5 as our automated test infrastructure. We chose this test infrastructure because JUnit works well with Kotlin code and Gradle
 has native support for it.  
 
-<strong>Add a New Test</strong>  
+**Add a New Test** 
 To add a new test:
 - Within the 'test' subpackage, create a new class  
 ![Create Test Class](Pictures/create_test_class.png)
@@ -228,7 +219,7 @@ To add a new test:
 - Add an 'assert' function and give appropriate arguments  
 ![Add Assert](Pictures/assert.png)
 
-<strong>Continuous Integraton</strong>
+**Continuous Integraton**
 Our continuous integration service we will be using is GitHub Actions. We followed these steps to setup GitHub Actions:
 1. Within the main branch in the GitHub repo, create the directory .github/workflows and create a .yml file here
 2. In the .yml file, use the keyword 'on' to specify the type of event to trigger the job to run (example: pushing to the repo)
@@ -236,7 +227,7 @@ Our continuous integration service we will be using is GitHub Actions. We follow
 4. The 'steps:' section specifies the steps taken to complete the job (example: 'uses: actions/checout@v2' for checking out the repo)
 5. Add additional steps to perform other tasks (example: we have steps to setup the Java JDK, the Android SDK, etc.)
 
-<strong>Pros and Cons</strong>
+**Pros and Cons**
 GitHub Actions vs. GitLab vs. Travis
 GtiHub Actions Pros:
 - We are using GitHub to host our code
@@ -279,16 +270,17 @@ CI Build Triggers:
 - Pushing to the repository
 
 ## Software Architecture
-<strong>Major Software Components:</strong>  
+**Major Software Components:**  
+- Android Studio
 - Kotlin Programming Language
 - Firebase Database
 
-<strong>Interface Between Components:</strong>  
-The interface between Kotlin and the Firebase database will be a Kotlin class. Within this class there will be code that allows our program to both read and write data to the database. With this in place, we should be able to store and retrieve any data the user enters or has entered.  
+**Interface Between Components:**  
+The communication link between Kotlin and the Firebase database will take the form of a Kotlin class. This class will contain code enabling our program to read and write data seamlessly to the database. This setup ensures the storage and retrieval of any user-entered data.
 
-<strong>Data the System Stores:</strong>  
-This system should store information from the user's profile like their first name, last name, email address, phone number password, and any answers they provide to security questions. Additionally, the system will store their settings like their expense categories, their expenses (in dollar amounts), their set limits (in dollar amounts). Both this data and the user's profile information will all be stored in a database. As part of our design, the database will have a table for storing the user's account information. Then, each account table will be linked to a budget or settings table that stores information about the user's customized budget.  
-<strong>Alternatives:</strong>  
+**Data the System Stores:** 
+The system will store user profile information, including first name, last name, email, phone number, password, and security question answers. Additionally, it will store settings such as expense categories, dollar amounts of expenses, and set limits in a database. The database design includes a table for user account information linked to a table for budget or settings to store customized budget details.
+**Alternatives:**
 An alternative to using Kotlin as our primary programming language, we could use Java as an alternative to develop an Android app.  
 Java Pros:  
 - More documentation
@@ -312,23 +304,40 @@ Azure Cons:
 - Setup with Azure isn't as simple and easy as it is with Firebase
 
 ## Software Design
-<strong>Kotlin:</strong>  
-Kotlin is a cross-platform, high-level programming language that is interoperable with Java. Kotlin compiles to Java bytecode and uses the Java Virtual Machine to run its code. Part of the aspects of Kotlin that make it a worthy programming language are the following: packages (to organize classes), classes (for creating an outline for objects), functions (allow objects to perform tasks), objects and their properties (unique instances of a class with their own unique properties), interfaces (creates a basic outline of functions for classes to implement), enums (for a set of constant variable values), data classes (for data storage and organization), and companion objects (creates static members). Together all of these features of Kotlin combine to make creating an Android application possible.  
+**Android Studio**
+- Android Studio is the software we are using to develop, build, test, run, and document our application. 
+- Uses an emulated Pixel 5 with API 31 and the Android 12.0 system image to run the app
+- Gradle is a built-in build tool for automatically building the app
+- With the JUnit and Dokka plugins, Gradle also handles testing and documentation
+- When the app is running, users can enter data on numerous different screens
+- We aim to have data stored in the Firebase database
+- While the app is running, we aim to have data sent and received to the app from the Firebase database consistently
 
-<strong>Firebase:</strong>  
-Firebase is a database created by Google, and it is designed to store data primarily for web and mobile applications. Some of the components of Firebase include a FirebaseApp (an application that acts as the entry point for Firebase services), FirebaseOptions (used to configure options such as project ID, API key, and app name), FirebaseAuth (includes services for authenticating sign-up/sign-in), Firebase Realtime Database (includes packages for storing, retrieving, and changing data), Firebase Storage (collection of classes that interact with Firebase Cloud Storage, which can store files and objects), Firebase Cloud Messaging (sends notifications), and Firebase Analytics (provide details about user behavior and app usage). Combined together, all these features used make Firebase ideal for authenticating users, storing, retrieving, and modifying their data, and analyzing their data. When used with Kotlin, the Firebase features combined with Kotlin features are ideal for creating a mobile Android application.  
+**Kotlin:**
+ - Kotlin is the programming language we are using to develop our application
+- Using Kotlin and Jetpack Compose, screens that appear on the emulator have textboxes for users to enter data into the app
+- We aim to have a class to form a connection between the database and the app
+- This class should be able to consistently send new user-entered data and retrieve any data that the user wants to retrieve
+- The data the user enters will be used display things on the screen. For example, when entering data to create a category, the program will use the category name and color the user picked to display that new category on the screen. Dollar amounts the user enters will be used to graphically display how much money they have spent compared to other days. Dollar amounts will also be evaluated to generate user-specific recommendations to show users, such as "Spend less on Entertainment and more on Food."
+
+**Firebase:**  
+- Firebase is the database we are using to store data
+- Tables designed according to the database schema in the database will be where data will be stored
+- If a user enters data into the app, something like a "Submit" button should trigger a call to the database to send the data from the app to the database
+- If a user presses a button (like to select a category), there should be a trigger to call the database to send data to the app
+- Data will not be manipulated in the database, only stored in different tables
 
 ## Coding Guidelines
-<strong>Kotlin Style Guide:</strong>  
+**Kotlin Style Guide:** 
 Link to the official [Kotlin Style Guide](https://developer.android.com/kotlin/style-guide)  
 Link to the official [KDoc documentation](https://kotlinlang.org/docs/kotlin-doc.html)  
 Link to the official [KDoc Dokka tool documentation](https://kotlinlang.org/docs/dokka-introduction.html)  
 
-<strong>Why we chose this style and documentation:</strong>  
-We chose this style and documentation because it's the style and documentation on the Android Developer and Kotlin website, so we figured it would be best to use what is recommeneded by those who develop Android apps and those who wrote the programming language.  
+**Why we chose this style and documentation:** 
+We opted for this style and documentation approach as it aligns with the standards presented on the Android Developer and Kotlin websites. Following the recommendations of those involved in Android app development and the creators of the programming language seemed the most fitting choice.
 
-<strong>How we plan to enforce this:</strong>  
-We plan on enforcing this by having the guides linked within the GitHub repo, and all members will need to look over the guides. This way, if any member ever has a question about how to format something, they can easily refer to the guides to try and find an answer.  
+**How we plan to enforce this:**  
+We intend to reinforce this by including the guides in the GitHub repository, requiring all members to review them. This approach ensures that if any member has formatting questions, they can readily consult the guides for guidance.
 
 ### Risk Assessment  
 Risks:
@@ -338,78 +347,70 @@ Risks:
 4. Displaying data graphically and accurately
 5. Database Design/Implementaion
 
-#### Communication with Database:
-<strong>Likelihood of occurring:</strong>  
-medium  
-<strong>Impact if it occurs:</strong>  
-high  
-<strong>Evidence:</strong>  
-We believe the likelihood of this occurring is medium because we’ve never used Firebase with Android Studio, and the impact would be high because if we can’t store/retrieve data, we can’t have a functioning app.  
-<strong>Steps to reduce likelihood/impact and improve estimates:</strong>  
-We plan on reducing the likelihood of something like this from happening by utilizing resources on the Firebase website, Android Studio website, and any other sites with information on setting up communication between Firebase and Android Studio. To improve our estimates of the likelihood and the impact, we believe reviewing the resources to get the program and the database to communicate will increase our knowledge and experience with Firebase and Android Studio.  
-<strong>Plan for detecting problem:</strong>  
-To detect the problem, we can create simple tests. For example, we can create test data in the program, send it to the database, and then check the database to see if the data was successfully sent. Then we can add test data to the database and pull that from the database into the project and see if we get the test data.  
-<strong>Mitigation Plan:</strong>  
-If this issue arises and can’t be resolved in a timely manner, we may have to store data within the app itself.  
+#### Database Communication Assessment:
+**Likelihood:** 
+Medium  
+**Impact:**  
+High  
+**Evidence:**
+The likelihood is deemed medium due to our limited experience with Firebase and Android Studio integration, while the potential impact is high, as the app's functionality relies heavily on successful data storage and retrieval.  
+**Steps for Mitigation and Improvement:**  
+We aim to decrease the likelihood by leveraging resources from Firebase, Android Studio, and other relevant sources to enhance our understanding of establishing communication. Regular reviews of these resources will refine our estimates and bolster our proficiency with Firebase and Android Studio.  
+**Problem Detection Strategy:**  
+Simple tests, such as sending and retrieving test data between the program and the database, will serve as indicators. Ensuring the successful exchange of test data will verify the effectiveness of the communication setup.  
+**Mitigation Plan:** 
+In the event of prolonged resolution timelines, we may resort to storing data within the app itself as an interim solution.
 
-#### Communication between Frontend/Backend:
-<strong>Likelihood of occurring:</strong>  
-low  
-<strong>Impact if it occurs:</strong>  
-high  
-<strong>Evidence:</strong>  
-In terms of the likelihood of this occurring, we believe this would be ranked as low. We say this because all frontend components should have corresponding backend code that triggers when the action listener detects an action. Regarding the impact on the app if this issue were to occur, it would be detrimental because any interactions the user has with the frontend wouldn’t be communicated to the backend, meaning the user's input doesn't produce output.    
-<strong>Steps to reduce likelihood/impact and improve estimates:</strong>  
-To reduce the likelihood of this issue, we will make sure that all components the user interacts with, like textboxes and buttons, will have action listeners attached to them that run the appropriate code when it detects an action. In order to improve our estimates, we will test out all frontend components with some dummy backend code to make sure the frontend component calls the dummy backend code when activated.    
-<strong>Plan for detecting problem:</strong>  
-Simply running the app, interacting with the app, and analyzing the output should be sufficient enough to determine if the frontend is successfully communicating with the backend of the app.  
-<strong>Mitigation Plan:</strong>  
-To help mitigate this, we plan on implementing backend code that will execute for all frontend components. We will test this out to make sure that the code that’s supposed to run runs to ensure the frontend is communicating with the backend.  
+#### Frontend/Backend Communication Assessment:
+**Likelihood:** Low  
+**Impact:** High  
+**Evidence:**
+Anticipating a low likelihood, we assume frontend components trigger corresponding backend code. A high impact is expected, as communication failure would result in user interactions not producing expected outputs.  
+**Mitigation and Improvement:**  
+Ensure user-interactive components have action listeners linked to appropriate backend code. Test each frontend component with dummy backend code for validation and refinement of estimates.  
+**Problem Detection Strategy:**  
+Run the app, engage with its features, and assess the output to confirm successful frontend-to-backend communication.  
+**Mitigation Plan:** 
+Implement backend code for all frontend components, rigorously testing execution to ensure seamless communication.
 
-#### Saving/Accessing different user's settings and info:
-<strong>Likelihood of occurring:</strong>  
-low  
-<strong>Impact if it occurs:</strong>  
-high  
-<strong>Evidence:</strong>  
-We believe the likelihood of this happening is ranked as medium because we haven’t written and tested code to save/access the correct data in the correct table. In the chance of this occurring, the impact on the functionality of the app would be high because if we can’t store the user’s data or properly retrieve their data, there would be no point for the user to user the app.     
-<strong>Steps to reduce likelihood/impact and improve estimates:</strong>  
-To help reduce the likelihood of such an error, we will review Firebase documentation and tutorials, so we know how to facilitate communication between Firebase and Android Studio. As we become more experienced with using Firebase, we believe our estimates will become more accurate.       
-<strong>Plan for detecting problem:</strong>  
-As a way to detect the problem, we will run tests, such as creating two different users with different settings. Then we will sign out of one account, sign back in to the other, and see if the data linked to this user account is retrieved. If there is no data, or the data is different compared to the data we entered, then we will know there is some kind of issue.  
-<strong>Mitigation Plan:</strong>  
-Mitigation can be achieved through altering either our methods of sending/storing data in the database or retrieving/displaying the data sent from the database. We should continue to tweak the methods until we can consistently send information to the database, have the database save it, and then pull the information down from the appropriate table(s) within the database and display it in the app.  
+#### User Settings and Information Handling:
+**Likelihood:** Low  
+**Impact:** High  
+**Evidence:**  
+Anticipating a low likelihood, we rank it as medium due to untested code for saving/accessing accurate data in the correct table. The potential high impact stems from the app's functionality being compromised if user data cannot be stored or retrieved accurately.     
+**Steps for Mitigation and Improvement:**  
+Review Firebase documentation and tutorials to enhance communication between Firebase and Android Studio, thereby reducing the likelihood of errors. As our experience with Firebase grows, our estimation accuracy will improve.       
+**Problem Detection Strategy:**  
+Conduct tests, such as creating and switching between different user accounts with unique settings, to identify any discrepancies in retrieved data.   
+**Mitigation Plan:**
+Adjust data storage and retrieval methods in the database until consistent communication is established. Continuously refine methods to ensure reliable information exchange between the app and the database.
 
-#### Displaying data graphically and accurately:
-<strong>Likelihood of occurring:</strong>  
-medium  
-<strong>Impact if it occurs:</strong>  
-high  
-<strong>Evidence:</strong>  
-We assert that this is a medium because it can be difficult to accurately display graphical data. If the data is inaccurately displayed, it can be difficult for consumers to keep track of their expenses. For the overall impact, we rank this as medium because graphics depicting the user's spending isn't as important as the user being able to keep create their own custom budget and have the app track everything for them.  
-<strong>Steps to reduce likelihood/impact and improve estimates:</strong>  
-Reducing the likelihood of this occurring can be reached through finding good resources that lay out how to insert such graphics into a Kotlin application. As a way of improving our estimates, we can try out what we find with the resources we find. If what we find proves useful, we can get a better idea of whether or not we can implement charts within our own application.  
-<strong>Plan for detecting problem:</strong>  
-To detect such a problem, we can simply create test data and see if it displays and displays accurately. If we can't get data to display or display it accurately, we know we'll have to go back and tweak the code.  
-<strong>Mitigation Plan:</strong>  
-Should an issue like this occur, we can mitigate it by implementing some sort of substitution. For example, instead of displaying a graphic that shows how much the user has spent across all of their expense categories, we could display a scrollable list with the names of all expense categories and their corresponding value listed out side-by-side.  
+#### Graphical Data Display:
+**Likelihood:** Medium  
+**Impact:** High  
+**Evidence:**
+Ranked as medium, accurately displaying graphical data poses challenges. While inaccuracies can hinder expense tracking, graphics' importance is deemed medium compared to users creating custom budgets and comprehensive app tracking.  
+**Steps for Mitigation and Improvement:**  
+Reduce the likelihood by leveraging resources outlining graphic insertion into Kotlin applications. Experiment with found resources to refine estimates and assess implementability.  
+**Problem Detection Strategy:**  
+Create test data and verify its accurate graphical display. In case of issues, revisit and adjust the code.  
+**Mitigation Plan:**  
+Implement a substitution approach, such as displaying a scrollable list of expense categories and their corresponding values if graphical representation faces challenges.
 
 #### Database Design/Implementation:
-<strong>Likelihood of occurring:</strong>  
-medium    
-<strong>Impact if it occurs:</strong>  
-medium   
-<strong>Evidence:</strong>  
-In terms of this issue occurring, we believe this is ranked as medium. This is because none of us have much experience actually designing and implementing a database. Also, we believe the impact of this would be ranked as medium because if one database design/implementation doesn't work out, we can always re-design and re-implement it.    
-<strong>Steps to reduce likelihood/impact and improve estimates:</strong>  
-As a way to reduce the issue's likelihood, we will discuss how the database should be designed based on what we know. Then, we will ask clarifying questions about the database's design. To improve our estimates, we will try to make the design as simple as possible while still fulfilling all the tasks we need it to do. From there we will attempt to implement the database and test it to see if there needs to be any adjustments.  
-<strong>Plan for detecting problem:</strong>  
-To detect the problem, should it occur, we will review our database design and ask any questions any of us have about it. Then, we will attempt to create the database according to the design. Afterwards, we will use test data to see if the database is functions as we had planned.    
-<strong>Mitigation Plan:</strong>  
-If an error like this occurs, we will work on re-designing and re-implementing the database.  
+**Likelihood:** Medium    
+**Impact:** Medium   
+**Evidence:** 
+Ranked as medium, the likelihood stems from limited team experience in database design/implementation. The impact is also medium, as a failed design can be re-evaluated and re-implemented.  
+**Steps for Mitigation and Improvement:**  
+To decrease the likelihood, discuss and design the database based on existing knowledge, seeking clarification through questions. Streamline the design while ensuring it meets all necessary requirements to improve estimates. Implement and test the database, making adjustments as needed.  
+**Problem Detection Strategy:**  
+Review the database design, address questions, implement the design, and test with sample data to ensure functionality aligns with the plan.    
+**Mitigation Plan:**  
+In the event of an error, the team will re-design and re-implement the database to address any issues.
 
 ### Project Schedule  
-<strong>Major Milestones</strong>  
+**Major Milestones** 
 Screen Design - design what each screen should look like by end of Sept.  
 Functionality Design - design what should happen when a button is pressed by end of Sept.  
 Firebase Project - learn about and create a Firebase project by end of Sept.  
@@ -421,7 +422,7 @@ Firebase Implementation - implement the design by end of Oct.
 Data Storage/Retrieval - test out sending and receiving data to/from the database by early Nov.    
 Graphics - work on getting graphics to display by early to mid-Nov.  
 
-<strong>Dependencies</strong>  
+**Dependencies**
 In order to test out the buttons on the different screens, the screens have to be designed and implemented as well as the logic behind the buttons has to be designed and implemented before we can successfully test everything out.  
 
 For testing data storage and retrieval, the screens have to be laid out, the buttons need to make calls to the database, and the database needs to be designed and implemented.  
