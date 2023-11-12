@@ -54,9 +54,30 @@ Note: If you don't have Java JDK version 17 or higher, start at Java Installatio
 4. Select the Standard setup for Android Studio
 5. Accept the Current Settings and License Agreements
 6. After this, Android Studio will automatically download all necessary components. This will take a few minutes.
+Note: Our group uses the new UI of Android Studio. To change to the new UI, File -> Settings -> Appearance & Behavior -> New UI then press "Enable new UI." Additionally, in the project pane to the on the left side of the Android Studio, it may be better to swtich from the Project option to the Android option and vice versa. For example, after running the command to generate KDocs, the Html pages can be found under app -> build -> dokka when using the Project view. This directory is not found under the Android view.
 
 ## Configuration
-Our project uses X plugins: Dokka, Firebase
+Our project was created using Android Studio, and, as of now, our project is configured to utilize Kotlin, Jetpack Compose, JUnit, Dokka, and Firebase. 
+### Important Info About Our App's Configuration
+- Android Studio version: Android Studio Giraffe version 2022.3.1 Patch 2
+- Android Gradle Plugin Version: 8.1.2
+- Gradle Version: 8.0
+- Gradle JDK version: jbr-17 JetBrains Runtime version 17.0.6
+- Kotlin Compiler version: 1.8.10
+- Kotlin version: 1.9.0
+- Jetpack Compose version: 1.3.2
+- JUnit versions: 4.13.2, 5.10.0
+- Dokka Gradle Plugin version: 1.9.10
+- build.gradle (:app) compileSdk: 34
+- build.gradle (:app) minSdk: 28
+- build.gradle (:app) targetSdk: 34
+- build.gradle (:app) sourceCompatibility: JavaVersion.VERSION_17
+- build.gradle (:app) targetCompatibility: JavaVersion.VERSION_17
+- build.gradle (:app) jvmTarget: 17
+
+### Important Note About Building for the First Time
+- If there is ever a build fail with an error message relating to compileSdk 33 and targetSdk 33, go to the build.gradle (:app) file and change the values for compileSdk and targetSdk from 33 to 34.
+- Any build fails that result from non-supported Java versions, go to build.gradle (:app), and within compileOptions, change JavaVersion.<java_version> to JavaVersion.VERSION_17. Underneath kotlinOptions, change the value of jvmTarget to '17'. If there are still issues with the Java version, go to File -> Project Structure -> Modules, and in the Source Compatibility and Target Compatibility drop-downs, select Java 17.
 
 ## Usage
 
@@ -107,28 +128,32 @@ The bar chart is for the user to get a visualization of their spending. The char
 - **Secure Data:** Your financial data is securely stored and protected.
 
 ## Getting Started
-### Important Info About Our App's Configuration
-- Android Studio version: Android Studio Giraffe version 2022.3.1 Patch 2
-- Android Gradle Plugin Version: 8.1.2
-- Gradle Version: 8.0
-- Gradle JDK version: jbr-17 JetBrains Runtime version 17.0.6
-- Kotlin Compiler version: 1.8.10
-- Kotlin version: 1.9.0
-- Dokka Gradle Plugin version: 1.9.10
-- Jetpack Compose version: 1.3.2
-- build.gradle (:app) compileSdk: 34
--  build.gradle (:app) minSdk: 28
--  build.gradle (:app) targetSdk: 34
--  build.gradle (:app) sourceCompatibility: JavaVersion.VERSION_17
--  build.gradle (:app) targetCompatibility: JavaVersion.VERSION_17
-- build.gradle (:app) jvmTarget: 17
 ### Cloning the Project
 1. Open up Android Studio. When the "Welcome to Android Studio" screen appears, click on "Get from VCS"
 2. Copy the URL from the Budgetr GitHub repository and paste it into the "URL:"" text field, then click "Clone"
 3. The project should start downloading and open automatically. Note: if a Windows Security Alert window pops up when the app opens, click "Allow access"
 
+### Creating the Virtual Device (Emulator)
+1. In Android Studio, go to Device Manager
+2. Within Device Manager, click Create Device
+3. Under the Phone list, select the Pixel 5 phone, then click Next
+4. Under the System Image list, select the option Release Name: S, API Level 31, ABI x86_64, Target: Android 12.0 (Google APIs), then click Next
+5. Finally you can give the device a name, or leave it as its default name. Then click Finish
+6. To run the Virtual Device, under the Device Manager window, click the play button next to your virtual device's name. This will launch the emulator, **not** the application.
+
 ### Building the Project
 1. With the project opened, in the menu bar at the top, click Build -> Make Project to allow Gradle to automatically build the project
+
+### Running the Project
+Note: There are two ways to launch the application. We find it better to use Option 2.
+Option 1
+1. Press the play button at the top of the Android Studio window, or go to File -> Run -> Run 'app'
+2. This should build the project, initialize the emulator, and then start the app on the emulator.
+
+Option 2
+1. Under Device Manager, click the play button next to your virtual device's name. This will only launch the virtual device.
+2. Once the virtual device is up and running, then press the play button at the top of the Android Studio window, or go to File -> Run -> Run 'app'
+3. With the emulator still running, once the project finishes building, the app should automatically appear on the emulator.
 
 ### Testing the Project
 1. In Android Studio, open a terminal
