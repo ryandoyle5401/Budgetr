@@ -9,6 +9,7 @@ plugins {
     id 'org.jetbrains.kotlin.android'
     id "io.sentry.android.gradle" version "3.4.2"
     id 'io.realm.kotlin'
+    id("org.jetbrains.dokka")
 }
 
 android {

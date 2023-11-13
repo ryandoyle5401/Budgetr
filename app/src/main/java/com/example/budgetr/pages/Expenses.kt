@@ -24,12 +24,19 @@ import com.example.budgetr.ui.theme.Typography
 import com.example.budgetr.viewmodels.ExpensesViewModel
 import java.text.DecimalFormat
 
+/**
+ * Composable function for the "Expenses" page in the Budgetr app.
+ *
+ * @param navController The NavController for navigation.
+ * @param vm The ExpensesViewModel used for managing the state of the "Expenses" page.
+ */
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun Expenses(
   navController: NavController,
   vm: ExpensesViewModel = viewModel()
 ) {
+  // List of available recurrence options
   val recurrences = listOf(
     Recurrence.Daily,
     Recurrence.Weekly,
@@ -37,11 +44,14 @@ fun Expenses(
     Recurrence.Yearly
   )
 
+  // Collect and observe the UI state
   val state by vm.uiState.collectAsState()
+  // Flag to manage the visibility of recurrence menu
   var recurrenceMenuOpened by remember {
     mutableStateOf(false)
   }
 
+  // Scaffold for the "Expenses" page
   Scaffold(
     topBar = {
       MediumTopAppBar(
@@ -60,6 +70,7 @@ fun Expenses(
           .fillMaxWidth(),
         horizontalAlignment = Alignment.CenterHorizontally
       ) {
+        // Row for selecting the recurrence option
         Row(verticalAlignment = Alignment.CenterVertically) {
           Text(
             "Total for:",
@@ -80,6 +91,7 @@ fun Expenses(
             }
           }
         }
+        // Display the total expense amount
         Row(modifier = Modifier.padding(vertical = 32.dp)) {
           Text(
             "$",
@@ -92,6 +104,7 @@ fun Expenses(
             style = Typography.titleLarge
           )
         }
+        // Display the list of expenses
         ExpensesList(
           expenses = state.expenses,
           modifier = Modifier
@@ -105,6 +118,9 @@ fun Expenses(
   )
 }
 
+/**
+ * Preview function for the "Expenses" page in the Budgetr app.
+ */
 @Preview(uiMode = UI_MODE_NIGHT_YES)
 @Composable
 fun ExpensesPreview() {

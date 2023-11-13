@@ -8,8 +8,15 @@ import org.junit.runner.RunWith
 
 import org.junit.Assert.*
 
+/**
+ * Instrumented test class for the Budgetr app.
+ */
 @RunWith(AndroidJUnit4::class)
 class ExampleInstrumentedTest {
+
+  /**
+   * Test method to check the application context.
+   */
   @Test
   fun useAppContext() {
     // Context of the app under test.
