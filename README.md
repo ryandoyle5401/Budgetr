@@ -161,6 +161,30 @@ Option 2
 3. To see the results, in File Explorer, navigate to the location where Budgetr is stored. From there go to app/build/reports/tests/testDebugUnitTest/index.html to view the test result HTML page
 
 ### Using the App
+When the app first starts running, the Expenses screen will be the first screen to pop up. At the bottom of the screen, there are four buttons that navigate to every screen: Expenses, Reports, Add, Settings.
+
+#### Expenses Screen
+The Expenses screen shows the user all expenses added together and broken down into each category. By default, it shows all expenses entered today, but the user can switch to see the all the expenses they entered for the past week, the past month, and the past year.  
+
+#### Reports Screen
+The Reports screen displays a bar chart and the expenses entered for the week, the month, or the entire year. Again, the expenses are listed by each individual category, and the bar chart displays the all expenses incurred on the day of the week, the day of the month, or the month of the year.  
+
+#### Add Screen
+The Add screen is where users can enter an expense amount, select how often the expense occurs, the date of the expense, any notes about the expense, and the selecting the category the expense fits in.
+To add an expense, follow these steps:
+1. Enter the amount of the expense at the top of the screen. Decimals are not necessary
+2. Optionally enter how often this expense occurs
+3. Optionally select the date that this expense occurs. By default, this value is the current date.
+4. Optionally leave a note about the expense.
+5. Select the category the expense belongs to.
+6. Press the "Submit expense" button
+
+#### Settings Screen
+The Settings screen is where the user can go to edit their list of categories or delete all information on the app.
+To create a new category, follow these steps:
+1. At the bottom of the screen, click the text box with the text "Category name"
+2. Enter the category name. For example, "Food"
+3. Optionally add a color to associate with this category by clicking the white circle next to the text field, selecting a color, press "Done", then click the paper airplane button next to the text box to submit the category.
 
 ## Customization
 
