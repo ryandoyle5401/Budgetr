@@ -50,7 +50,7 @@ fun Add(navController: NavController, vm: AddViewModel = viewModel()) {
   // Scaffold for the "Add" page
   Scaffold(topBar = {
     MediumTopAppBar(
-      title = { Text("Add New Expense",color = Color.White) },
+      title = { Text("Add") },
       colors = TopAppBarDefaults.mediumTopAppBarColors(
         containerColor = TopAppBarBackground
       )
@@ -68,12 +68,8 @@ fun Add(navController: NavController, vm: AddViewModel = viewModel()) {
           .background(BackgroundElevated)
           .fillMaxWidth()
       ) {
-
-        TableRow(label = "Amount", labelColor = Color.White, detailContent = {
-
         // Expense detail input fields
         TableRow(label = "Amount", detailContent = {
-
           UnstyledTextField(
             value = state.amount,
             onValueChange = vm::setAmount,
@@ -94,7 +90,7 @@ fun Add(navController: NavController, vm: AddViewModel = viewModel()) {
           thickness = 1.dp,
           color = DividerColor
         )
-        TableRow(label = "Recurrence", labelColor = Color.White, detailContent = {
+        TableRow(label = "Recurrence", detailContent = {
           var recurrenceMenuOpened by remember {
             mutableStateOf(false)
           }
@@ -122,7 +118,7 @@ fun Add(navController: NavController, vm: AddViewModel = viewModel()) {
         var datePickerShowing by remember {
           mutableStateOf(false)
         }
-        TableRow(label = "Date", labelColor = Color.White, detailContent = {
+        TableRow(label = "Date", detailContent = {
           TextButton(onClick = { datePickerShowing = true }) {
             Text(state.date.toString())
           }
@@ -142,10 +138,10 @@ fun Add(navController: NavController, vm: AddViewModel = viewModel()) {
           thickness = 1.dp,
           color = DividerColor
         )
-        TableRow(label = "Note", labelColor = Color.White, detailContent = {
+        TableRow(label = "Note", detailContent = {
           UnstyledTextField(
             value = state.note,
-            placeholder = { Text("Leave some notes", color = Color.DarkGray) },
+            placeholder = { Text("Leave some notes") },
             arrangement = Arrangement.End,
             onValueChange = vm::setNote,
             modifier = Modifier.fillMaxWidth(),
@@ -159,7 +155,7 @@ fun Add(navController: NavController, vm: AddViewModel = viewModel()) {
           thickness = 1.dp,
           color = DividerColor
         )
-        TableRow(label = "Category", labelColor = Color.White, detailContent = {
+        TableRow(label = "Category", detailContent = {
           var categoriesMenuOpened by remember {
             mutableStateOf(false)
           }
@@ -200,7 +196,7 @@ fun Add(navController: NavController, vm: AddViewModel = viewModel()) {
         shape = Shapes.large,
         enabled = state.category != null
       ) {
-        Text("Submit Expense", color = Color.Black)
+        Text("Submit expense")
       }
     }
   })

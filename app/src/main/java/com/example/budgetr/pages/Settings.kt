@@ -9,7 +9,6 @@ import androidx.compose.material3.*
 import androidx.compose.runtime.*
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
-import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.unit.dp
 import androidx.navigation.NavController
 import com.example.budgetr.components.TableRow
@@ -59,7 +58,7 @@ fun Settings(navController: NavController) {
   Scaffold(
     topBar = {
       MediumTopAppBar(
-        title = { Text("Settings", color = Color.White) },
+        title = { Text("Settings") },
         colors = TopAppBarDefaults.mediumTopAppBarColors(
           containerColor = TopAppBarBackground
         )
@@ -76,7 +75,7 @@ fun Settings(navController: NavController) {
         ) {
           // Settings table row for navigating to Categories settings
           TableRow(
-            label = "Categories", labelColor = Color.White,
+            label = "Categories",
             hasArrow = true,
             modifier = Modifier.clickable {
               navController.navigate("settings/categories")
@@ -87,7 +86,7 @@ fun Settings(navController: NavController) {
           )
           // Settings table row for erasing all data, with a destructive action
           TableRow(
-            label = "Erase all data", labelColor = Color.Red,
+            label = "Erase all data",
             isDestructive = true,
             modifier = Modifier.clickable {
               deleteConfirmationShowing = true
@@ -98,11 +97,11 @@ fun Settings(navController: NavController) {
             AlertDialog(
               onDismissRequest = { deleteConfirmationShowing = false },
               title = { Text("Are you sure?") },
-              text = { Text("This action cannot be undone.", color = Color.DarkGray) },
+              text = { Text("This action cannot be undone.") },
               confirmButton = {
                 // Button to confirm and delete all data
                 TextButton(onClick = eraseAllData) {
-                  Text("Delete everything", color = Color.Red)
+                  Text("Delete everything")
                 }
               },
               dismissButton = {

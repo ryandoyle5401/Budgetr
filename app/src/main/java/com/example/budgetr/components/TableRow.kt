@@ -6,14 +6,12 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.graphics.Color // <- Import for Color
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.unit.dp
 import com.example.budgetr.ui.theme.Destructive
 import com.example.budgetr.ui.theme.TextPrimary
 import com.example.budgetr.ui.theme.Typography
 import com.example.budgetr.R
-
 
 /**
  * A composable function for rendering a table row.
@@ -28,27 +26,21 @@ import com.example.budgetr.R
  * @param detailContent The optional detail content composable.
  * @param content The main content of the row.
  */
-
 @Composable
 fun TableRow(
   modifier: Modifier = Modifier,
   label: String? = null,
   hasArrow: Boolean = false,
   isDestructive: Boolean = false,
-  labelColor: Color = TextPrimary, // Add this line
   detailContent: (@Composable RowScope.() -> Unit)? = null,
   content: (@Composable RowScope.() -> Unit)? = null
 ) {
-
-  val textColor = labelColor.takeIf { it != Color.Unspecified } ?: (if (isDestructive) Destructive else TextPrimary)
-
   /*
    * Determines the text color based on destructiveness.
    * Destructiveness is used to indicate that the action will result in data loss,
    * e.g if the user were to delete an expense category, their settings, or profile
    */
   val textColor = if (isDestructive) Destructive else TextPrimary
-
 
   Row(
     modifier = modifier.fillMaxWidth(),
@@ -78,4 +70,3 @@ fun TableRow(
     }
   }
 }
-
