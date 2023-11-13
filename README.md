@@ -6,22 +6,24 @@
 - [Introduction](#introduction)
 
 -  [Installation](#installation)
-	-  [Java](#JavaInstallation)
-	- [Android Studio](#androidstudio)
+	-  [Java](#java-installation)
+	- [Android Studio](#android-studio-installation)
 
 -  [Configuration](#configuration)
+	- [Important Info About Our App's Configuration](#important-info-about-our-apps-configuration)
 
 - [Usage](#usage)
-	- [Operational Use Cases](#operational)
+	- [Operational Use Cases](#operational-use-cases)
 
 - [Features](#features)
 
-- [Getting Started](#GettingStarted)
-	- [Important Info About Our App's Configuration](#ImportantInfo)
-	- [Cloning the Project](#cloning)
-	- [Building the Project](#building)
-	- [Testing the Project](#testing)
-	- [Using the App](#UsingTheApp)
+- [Getting Started](#getting-started)
+	- [Cloning the Project](#cloning-the-project)
+   	- [Creating the Virtual Device](#creating-the-virtual-device)
+	- [Building the Project](#building-the-project)
+   	- [Running the Project](#running-the-project)
+	- [Testing the Project](#testing-the-project)
+	- [Using the App](#using-the-app)
 
 - [Customization](#customization)
 
@@ -133,7 +135,7 @@ The bar chart is for the user to get a visualization of their spending. The char
 2. Copy the URL from the Budgetr GitHub repository and paste it into the "URL:"" text field, then click "Clone"
 3. The project should start downloading and open automatically. Note: if a Windows Security Alert window pops up when the app opens, click "Allow access"
 
-### Creating the Virtual Device (Emulator)
+### Creating the Virtual Device
 1. In Android Studio, go to Device Manager
 2. Within Device Manager, click Create Device
 3. Under the Phone list, select the Pixel 5 phone, then click Next
