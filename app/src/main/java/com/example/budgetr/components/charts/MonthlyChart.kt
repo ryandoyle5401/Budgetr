@@ -7,14 +7,14 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import com.github.tehras.charts.bar.BarChart
+import com.github.tehras.charts.bar.BarChartData
+import com.github.tehras.charts.bar.renderer.yaxis.SimpleYAxisDrawer
 import com.example.budgetr.models.Expense
 import com.example.budgetr.models.Recurrence
 import com.example.budgetr.models.groupedByDayOfMonth
 import com.example.budgetr.ui.theme.LabelSecondary
 import com.example.budgetr.utils.simplifyNumber
-import com.github.tehras.charts.bar.BarChart
-import com.github.tehras.charts.bar.BarChartData
-import com.github.tehras.charts.bar.renderer.yaxis.SimpleYAxisDrawer
 import java.time.LocalDate
 import java.time.YearMonth
 
