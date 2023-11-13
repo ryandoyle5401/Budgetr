@@ -8,6 +8,7 @@ import androidx.compose.material3.*
 import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.lifecycle.viewmodel.compose.viewModel
@@ -54,7 +55,7 @@ fun Expenses(
   Scaffold(
     topBar = {
       MediumTopAppBar(
-        title = { Text("Expenses") },
+        title = { Text("List Of Expenses", color = Color.White) },
         colors = TopAppBarDefaults.mediumTopAppBarColors(
           containerColor = TopAppBarBackground
         )
@@ -83,7 +84,7 @@ fun Expenses(
           DropdownMenu(expanded = recurrenceMenuOpened,
             onDismissRequest = { recurrenceMenuOpened = false }) {
             recurrences.forEach { recurrence ->
-              DropdownMenuItem(text = { Text(recurrence.target) }, onClick = {
+              DropdownMenuItem(text = { Text(recurrence.target, color = Color.Black) }, onClick = {
                 vm.setRecurrence(recurrence)
                 recurrenceMenuOpened = false
               })

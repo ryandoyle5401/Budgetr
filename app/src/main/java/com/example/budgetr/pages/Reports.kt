@@ -3,6 +3,7 @@ package com.example.budgetr.pages
 import androidx.compose.material3.*
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.collectAsState
+import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.painterResource
 import androidx.lifecycle.viewmodel.compose.viewModel
 import com.google.accompanist.pager.ExperimentalPagerApi
@@ -35,7 +36,7 @@ fun Reports(vm: ReportsViewModel = viewModel()) {
   Scaffold(
     topBar = {
       MediumTopAppBar(
-        title = { Text("Reports") },
+        title = { Text("Expense Reports", color = Color.White) },
         colors = TopAppBarDefaults.mediumTopAppBarColors(
           containerColor = TopAppBarBackground
         ),
@@ -44,7 +45,7 @@ fun Reports(vm: ReportsViewModel = viewModel()) {
           IconButton(onClick = vm::openRecurrenceMenu) {
             Icon(
               painterResource(id = R.drawable.ic_today),
-              contentDescription = "Change recurrence"
+              contentDescription = "Change Recurrence", tint = Color.White
             )
           }
           // Dropdown menu for selecting recurrence
