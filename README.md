@@ -39,15 +39,21 @@ Note: If you don't have Java JDK version 17 or higher, start at Java Installatio
 1. Download JDK version 17 or higher from the [Oracle](https://www.oracle.com/java/technologies/downloads/) website
 2. Once downloaded, double-click the installer and follow the installation steps
 3. In File Explorer, navigate to where the JDK installed and locate the JDK's "bin" folder and copy this file path. Do not close File Explorer.
-4. Now on Windows, in the Search box at the bottom-left corner, enter "Edit the system environment variables."
-5. Press the "Environment Variables..." button at the bottom-right of the System Properties page
-6. On the Environment Variables page go to the System variables list, click on "Path," then click on "Edit..."
-7. Click on the blank line underneath the very last file path in the list and paste the JDK's bin file path there, then close the window by clicking "OK"
-8. Back on the Environment Variables page, if you do not have a variable named "JAVA_HOME" in the User Variables list, go back to File Explorer and navigate to the "jdk-<version_number>" file and copy this file path
-9. Back on the Environment Variables page, click "New" on the User Variables list
-10. For the "Variable name" text field, enter JAVA_HOME
-11. For the "Variable value" text field, paste the jdk-<version_number> file path, then click OK
-12. After that, click OK on the Environment Variables page, then click OK on the System Properties page
+4. <img src="Screenshots/jdk_bin.png" />
+5. Now on Windows, in the Search box at the bottom-left corner, enter "Edit the system environment variables."
+6. <img src="Screenshots/edit_sys_vars.png" />
+7. Press the "Environment Variables..." button at the bottom-right of the System Properties page
+8. <img src="Screenshots/env_vars_button.png" />
+9. On the Environment Variables page go to the System variables list, click on "Path," then click on "Edit..."
+10. <img src="Screenshots/edit_path.png" />
+11. Click on the blank line underneath the very last file path in the list and paste the JDK's bin file path there, then close the window by clicking "OK." Note: the JDK-21 path was moved up one spot after being inserted at the bottom of the list. 
+12. Back on the Environment Variables page, if you do not have a variable named "JAVA_HOME" in the User Variables list, go back to File Explorer and navigate to the "jdk-<version_number>" file and copy this file path
+13. <img src="Screenshots/jdk_path.png" />
+14. Back on the Environment Variables page, click "New" on the User Variables list
+15. For the "Variable name" text field, enter JAVA_HOME
+16. For the "Variable value" text field, paste the jdk-<version_number> file path, then click OK
+17. <img src="Screenshots/java_home.png" />
+18. After that, click OK on the Environment Variables page, then click OK on the System Properties page
 
 ### Android Studio Installation
 1. To download the latest version of Android Studio, go to [Android Studio](https://developer.android.com/studio) website and select the download for your operating system
@@ -131,48 +137,61 @@ The bar chart is for the user to get a visualization of their spending. The char
 
 ## Getting Started
 ### Cloning the Project
-1. Open up Android Studio. When the "Welcome to Android Studio" screen appears, click on "Get from VCS"
-2. Copy the URL from the Budgetr GitHub repository and paste it into the "URL:"" text field, then click "Clone"
+1. Open up Android Studio. When the "Welcome to Android Studio" screen appears, click on "Get from VCS" <img src="Screenshots/get_from_vcs.png" />
+2. Copy the URL from the Budgetr GitHub repository and paste it into the "URL:"" text field, then click "Clone" <img src="Screenshots/clone_proj.png" width="75%" height="75%" />
 3. The project should start downloading and open automatically. Note: if a Windows Security Alert window pops up when the app opens, click "Allow access"
 
 ### Creating the Virtual Device
 1. In Android Studio, go to Device Manager
-2. Within Device Manager, click Create Device
-3. Under the Phone list, select the Pixel 5 phone, then click Next
-4. Under the System Image list, select the option Release Name: S, API Level 31, ABI x86_64, Target: Android 12.0 (Google APIs), then click Next
-5. Finally you can give the device a name, or leave it as its default name. Then click Finish
-6. To run the Virtual Device, under the Device Manager window, click the play button next to your virtual device's name. This will launch the emulator, **not** the application.
+<br/>
+<img src="Screenshots/dev_manager.png" />
+2. Within Device Manager, click Create Device <img src="Screenshots/create_dev.png" width="75%" height="75%" />    
+3. Under the Phone list, select the Pixel 5 phone, then click Next <img src="Screenshots/pixel5.png" width="75%" height="75%" />
+4. Under the System Image list, select Release Name: S, API Level 31, ABI x86_64, Target: Android 12.0 (Google APIs), then click Next  <img src="Screenshots/sys_img.png" width="75%" height="75%"/>
+5. Finally you can give the device a name, or leave it as its default name. Then click Finish  
+6. To run the Virtual Device, under the Device Manager window, click the play button next to your virtual device's name. This will launch the emulator, NOT the application
+<br/>
+<img src="Screenshots/run_dev.png" />
 
 ### Building the Project
-1. With the project opened, in the menu bar at the top, click Build -> Make Project to allow Gradle to automatically build the project
+1. With the project opened, in the menu bar at the top, click Build -> Make Project to allow Gradle to automatically build the project <img src="Screenshots/build.png" width="50%" height="50%"/>
 
 ### Running the Project
 Note: There are two ways to launch the application. We find it better to use Option 2.
 Option 1
-1. Press the play button at the top of the Android Studio window, or go to File -> Run -> Run 'app'
+1. Press the play button at the top of the Android Studio window, or go to File -> Run -> Run 'app' <img src="Screenshots/run_app.png" />
 2. This should build the project, initialize the emulator, and then start the app on the emulator.
 
 Option 2
-1. Under Device Manager, click the play button next to your virtual device's name. This will only launch the virtual device.
-2. Once the virtual device is up and running, then press the play button at the top of the Android Studio window, or go to File -> Run -> Run 'app'
-3. With the emulator still running, once the project finishes building, the app should automatically appear on the emulator.
+1. Under Device Manager, click the play button next to your virtual device's name. This will only launch the virtual device. <img src="Screenshots/run_dev.png" />
+2. Once the virtual device is up and running, then press the play button at the top of the Android Studio window, or go to File -> Run -> Run 'app' <img src="Screenshots/run_app.png" />
+3. With the emulator still running, once the project finishes building, the app should automatically appear on the emulator. 
 
 ### Testing the Project
-1. In Android Studio, open a terminal
-2. For Windows, enter "gradlew.bat test". For Mac or Linux, use ""./gradlew test". This command executes all tests in the project
+1. In Android Studio, at the bottom-left of the screen, open a terminal <br/> <img src="Screenshots/term.png" />
+2. For Windows, enter "gradlew.bat test". For Mac or Linux, use "./gradlew test". This command executes all tests in the project <img src="Screenshots/test_app.png" />
 3. To see the results, in File Explorer, navigate to the location where Budgetr is stored. From there go to app/build/reports/tests/testDebugUnitTest/index.html to view the test result HTML page
+<br/>
+<img src="Screenshots/test_res_path.png" />
+<img src="Screenshots/test_res_page.png" />
 
 ### Using the App
 When the app first starts running, the Expenses screen will be the first screen to pop up. At the bottom of the screen, there are four buttons that navigate to every screen: Expenses, Reports, Add, Settings.
 
 #### Expenses Screen
 The Expenses screen shows the user all expenses added together and broken down into each category. By default, it shows all expenses entered today, but the user can switch to see the all the expenses they entered for the past week, the past month, and the past year.  
+<br/>
+<img src="Screenshots/expenses.png" width="50%" height="50%"/>
 
 #### Reports Screen
-The Reports screen displays a bar chart and the expenses entered for the week, the month, or the entire year. Again, the expenses are listed by each individual category, and the bar chart displays the all expenses incurred on the day of the week, the day of the month, or the month of the year.  
+The Reports screen displays a bar chart and the expenses entered for the week, the month, or the entire year. Again, the expenses are listed by each individual category, and the bar chart displays the all expenses incurred on the day of the week, the day of the month, or the month of the year. 
+<br/>
+<img src="Screenshots/reports.png" width="50%" height="50%"/>
 
 #### Add Screen
 The Add screen is where users can enter an expense amount, select how often the expense occurs, the date of the expense, any notes about the expense, and the selecting the category the expense fits in.
+<br/>
+<img src="Screenshots/add.png" width="50%" height="50%"/>
 To add an expense, follow these steps:
 1. Enter the amount of the expense at the top of the screen. Decimals are not necessary
 2. Optionally enter how often this expense occurs
@@ -180,13 +199,19 @@ To add an expense, follow these steps:
 4. Optionally leave a note about the expense.
 5. Select the category the expense belongs to.
 6. Press the "Submit expense" button
+<br/>
+<img src="Screenshots/adding_expense.png" width="50%" height="50%"/>
 
 #### Settings Screen
 The Settings screen is where the user can go to edit their list of categories or delete all information on the app.
+<br/>
+<img src="Screenshots/settings.png" width="50%" height="50%"/>  
 To create a new category, follow these steps:
 1. At the bottom of the screen, click the text box with the text "Category name"
 2. Enter the category name. For example, "Food"
 3. Optionally add a color to associate with this category by clicking the white circle next to the text field, selecting a color, press "Done", then click the paper airplane button next to the text box to submit the category.
+<br/>
+<img src="Screenshots/adding_cat.png" width="50%" height="50%"/>
 
 ## Customization
 
