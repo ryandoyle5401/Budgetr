@@ -39,16 +39,21 @@ Note: If you don't have Java JDK version 17 or higher, start at Java Installatio
 1. Download JDK version 17 or higher from the [Oracle](https://www.oracle.com/java/technologies/downloads/) website
 2. Once downloaded, double-click the installer and follow the installation steps
 3. In File Explorer, navigate to where the JDK installed and locate the JDK's "bin" folder and copy this file path. Do not close File Explorer.
-
-4. Now on Windows, in the Search box at the bottom-left corner, enter "Edit the system environment variables."
-5. Press the "Environment Variables..." button at the bottom-right of the System Properties page
-6. On the Environment Variables page go to the System variables list, click on "Path," then click on "Edit..."
-7. Click on the blank line underneath the very last file path in the list and paste the JDK's bin file path there, then close the window by clicking "OK"
-8. Back on the Environment Variables page, if you do not have a variable named "JAVA_HOME" in the User Variables list, go back to File Explorer and navigate to the "jdk-<version_number>" file and copy this file path
-9. Back on the Environment Variables page, click "New" on the User Variables list
-10. For the "Variable name" text field, enter JAVA_HOME
-11. For the "Variable value" text field, paste the jdk-<version_number> file path, then click OK
-12. After that, click OK on the Environment Variables page, then click OK on the System Properties page
+4. <img src="Screenshots/jdk_bin.png" />
+5. Now on Windows, in the Search box at the bottom-left corner, enter "Edit the system environment variables."
+6. <img src="Screenshots/edit_sys_vars.png" />
+7. Press the "Environment Variables..." button at the bottom-right of the System Properties page
+8. <img src="Screenshots/env_vars_button.png" />
+9. On the Environment Variables page go to the System variables list, click on "Path," then click on "Edit..."
+10. <img src="Screenshots/edit_path.png" />
+11. Click on the blank line underneath the very last file path in the list and paste the JDK's bin file path there, then close the window by clicking "OK." Note: the JDK-21 path was moved up one spot after being inserted at the bottom of the list. 
+12. Back on the Environment Variables page, if you do not have a variable named "JAVA_HOME" in the User Variables list, go back to File Explorer and navigate to the "jdk-<version_number>" file and copy this file path
+13. <img src="Screenshots/jdk_path.png" />
+14. Back on the Environment Variables page, click "New" on the User Variables list
+15. For the "Variable name" text field, enter JAVA_HOME
+16. For the "Variable value" text field, paste the jdk-<version_number> file path, then click OK
+17. <img src="Screenshots/java_home.png" />
+18. After that, click OK on the Environment Variables page, then click OK on the System Properties page
 
 ### Android Studio Installation
 1. To download the latest version of Android Studio, go to [Android Studio](https://developer.android.com/studio) website and select the download for your operating system
@@ -140,11 +145,11 @@ The bar chart is for the user to get a visualization of their spending. The char
 1. In Android Studio, go to Device Manager
 <br/>
 <img src="Screenshots/dev_manager.png" />
-3. Within Device Manager, click Create Device <img src="Screenshots/create_dev.png" width="75%" height="75%" />    
-4. Under the Phone list, select the Pixel 5 phone, then click Next <img src="Screenshots/pixel5.png" width="75%" height="75%" />
-5. Under the System Image list, select Release Name: S, API Level 31, ABI x86_64, Target: Android 12.0 (Google APIs), then click Next  <img src="Screenshots/sys_img.png" width="75%" height="75%"/>
-6. Finally you can give the device a name, or leave it as its default name. Then click Finish  
-7. To run the Virtual Device, under the Device Manager window, click the play button next to your virtual device's name. This will launch the emulator, NOT the application
+2. Within Device Manager, click Create Device <img src="Screenshots/create_dev.png" width="75%" height="75%" />    
+3. Under the Phone list, select the Pixel 5 phone, then click Next <img src="Screenshots/pixel5.png" width="75%" height="75%" />
+4. Under the System Image list, select Release Name: S, API Level 31, ABI x86_64, Target: Android 12.0 (Google APIs), then click Next  <img src="Screenshots/sys_img.png" width="75%" height="75%"/>
+5. Finally you can give the device a name, or leave it as its default name. Then click Finish  
+6. To run the Virtual Device, under the Device Manager window, click the play button next to your virtual device's name. This will launch the emulator, NOT the application
 <br/>
 <img src="Screenshots/run_dev.png" />
 
