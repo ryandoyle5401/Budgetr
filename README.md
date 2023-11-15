@@ -138,7 +138,7 @@ The bar chart is for the user to get a visualization of their spending. The char
 ## Getting Started
 ### Cloning the Project
 1. Open up Android Studio. When the "Welcome to Android Studio" screen appears, click on "Get from VCS" <img src="Screenshots/get_from_vcs.png" />
-2. Copy the URL from the Budgetr GitHub repository and paste it into the "URL:"" text field, then click "Clone" <img src="Screenshots/clone_proj.png" width="75%" height="75%" />
+2. Copy the URL from the Budgetr GitHub repository and paste it into the "URL: https://github.com/ryandoyle5401/Budgetr" text field, then click "Clone" <img src="Screenshots/clone_proj.png" width="75%" height="75%" />
 3. The project should start downloading and open automatically. Note: if a Windows Security Alert window pops up when the app opens, click "Allow access"
 
 ### Creating the Virtual Device
@@ -148,7 +148,7 @@ The bar chart is for the user to get a visualization of their spending. The char
 2. Within Device Manager, click Create Device <img src="Screenshots/create_dev.png" width="75%" height="75%" />    
 3. Under the Phone list, select the Pixel 5 phone, then click Next <img src="Screenshots/pixel5.png" width="75%" height="75%" />
 4. Under the System Image list, select Release Name: S, API Level 31, ABI x86_64, Target: Android 12.0 (Google APIs), then click Next  <img src="Screenshots/sys_img.png" width="75%" height="75%"/>
-5. Finally you can give the device a name, or leave it as its default name. Then click Finish  
+5. Finally you can give the device a name, or leave it as its default name. Then click Finish <br/>
 6. To run the Virtual Device, under the Device Manager window, click the play button next to your virtual device's name. This will launch the emulator, NOT the application
 <br/>
 <img src="Screenshots/run_dev.png" />
