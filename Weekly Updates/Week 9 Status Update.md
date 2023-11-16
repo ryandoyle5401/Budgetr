@@ -1,6 +1,7 @@
 # Team Report
 
 ## Agenda
+Discuss Testing and CI assignment.  
 ## Group Goals from Previous Week
 1. Resolve issues with authentication
 2. Work on alpha release
@@ -8,11 +9,14 @@
 
 ## Group Progress & Issues
 ### Progress
-
+1. Rewrote Project Requirements a bit
+2. Improved the README with instructions for the alpha
+3. Cleaned up GitHub repo
 ### Issues
-
+1. Merge conflict with a UI branch
 ## Group Goals for Next Week
-
+1. Improve README some more
+2. Review instructions for downloading, building, running, etc. the project
 # Member Contributions
 
 ## Individual Goals from Previous Week
@@ -41,9 +45,11 @@
 
 ## Individual Progress & Issues
 ### Progress - Ryan
-
+1. Wrote instructions for README
+2. Added screenshots to README
+3. Deleted old branches
 ### Issues - Ryan
-
+1. Some issues with formatting the lists and screenshots in the README
 ### Progress - Josh
 ### Issues - Josh
 ### Progress - Robin
@@ -59,7 +65,9 @@
 
 ## Individual Goals for Next Week
 ### Ryan
-
+1. Help resolve merge conflict issues
+2. Work on getting GitHub Actions to work properly (successful build, launch unit tests)
+3. Declutter Project Requirements
 ### Josh
 
 ### Robin
