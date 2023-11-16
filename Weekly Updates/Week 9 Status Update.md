@@ -51,7 +51,9 @@ Discuss Testing and CI assignment.
 ### Issues - Ryan
 1. Some issues with formatting the lists and screenshots in the README
 ### Progress - Josh
+1. Worked on Alpha
 ### Issues - Josh
+1. No issues this week
 ### Progress - Robin
 
 ### Issues - Robin
@@ -73,7 +75,7 @@ Discuss Testing and CI assignment.
 2. Work on getting GitHub Actions to work properly (successful build, launch unit tests)
 3. Declutter Project Requirements
 ### Josh
-
+1. Figure that out after break
 ### Robin
 
 ### David
