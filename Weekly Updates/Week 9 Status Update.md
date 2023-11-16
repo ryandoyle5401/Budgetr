@@ -56,8 +56,12 @@ Discuss Testing and CI assignment.
 
 ### Issues - Robin
 ### Progress - David
+1. Worked on requirements
+2. Worked on Alpha
+3. Wiped computer and tested instructions
 
 ### Issues - David
+1. N/A
 
 ### Progress - Mitkumar
 
@@ -73,6 +77,10 @@ Discuss Testing and CI assignment.
 ### Robin
 
 ### David
+1. Eat lots of Turkey and Stuffing
+2. Watch some football
+3. Help the team with authentification screen
+
 
  
 ### Mitkumar
