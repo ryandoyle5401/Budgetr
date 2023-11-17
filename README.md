@@ -34,7 +34,7 @@ Budgetr is a user-friendly budget planning application designed to help you mana
 With Budgetr, you can create and customize your budget plan according to your specific needs and financial goals. Track your income, expenses, and savings effortlessly, and gain valuable insights into your spending habits.
 
 ## Installation
-Note: If you don't have Java JDK version 17 or higher, start at Java Installation step 1. Otherwise, go to Android Studio Installation step 1.
+Note: If you don't have Java JDK version 17 or higher, start at Java Installation step 1. Otherwise, go to [Android Studio Installation](#android-studio-installation) step 1.
 ### Java Installation
 1. Download JDK version 17 or higher from the [Oracle](https://www.oracle.com/java/technologies/downloads/) website
 2. Once downloaded, double-click the installer and follow the installation steps
