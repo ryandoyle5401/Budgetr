@@ -68,9 +68,9 @@ Discuss Testing and CI assignment.
 1. N/A
 
 ### Progress - Mitkumar
-
+1. Working on the frontend of the trying to get the sign-in page working
 ### Issues - Mitkumar
-
+2. Getting errors when I try to get the sign-in page working. 
 ## Individual Goals for Next Week
 ### Ryan
 1. Help resolve merge conflict issues
@@ -85,10 +85,9 @@ Discuss Testing and CI assignment.
 ### David
 1. Eat lots of Turkey and Stuffing
 2. Watch some football
-3. Help the team with authentification screen
-
-
- 
+3. Help the team with authentification screen 
 ### Mitkumar
+1. Help with the sign on page and try to get it working
+2. help with other team things needed
 
 
