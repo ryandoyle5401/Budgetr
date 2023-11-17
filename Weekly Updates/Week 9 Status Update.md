@@ -55,8 +55,10 @@ Discuss Testing and CI assignment.
 ### Issues - Josh
 1. No issues this week
 ### Progress - Robin
-
+1. Worked on alpha
+2. Found a repo that uses realmDB with kotlin, going to see how that works. Maybe see if its easier to integrate than firebase since adding authentication crashes code.
 ### Issues - Robin
+1. Code still breaking when adding authentication // maybe not adding it correctly.
 ### Progress - David
 1. Worked on requirements
 2. Worked on Alpha
@@ -77,7 +79,9 @@ Discuss Testing and CI assignment.
 ### Josh
 1. Figure that out after break
 ### Robin
-
+1. figure out when authentication breaks code
+2. watch tutorial on realDB
+3. continue fixing issues.
 ### David
 1. Eat lots of Turkey and Stuffing
 2. Watch some football
